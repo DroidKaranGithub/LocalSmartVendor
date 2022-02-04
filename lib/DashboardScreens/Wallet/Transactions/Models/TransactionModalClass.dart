@@ -12,7 +12,6 @@ class TransactionModalClass {
   var message;
   var status;
 
-
   TransactionModalClass({
     this.id,
     this.transaction_id,
@@ -23,7 +22,6 @@ class TransactionModalClass {
     this.comment,
     this.attachment,
     this.user_id,
-
   });
 
   TransactionModalClass.fromJson(Map<String, dynamic> json) {
@@ -36,8 +34,6 @@ class TransactionModalClass {
     comment = json['comment'];
     attachment = json['attachment'];
     user_id = json['user_id'].toString();
-
-
   }
 
   Map<String, dynamic> toJson() {

@@ -30,32 +30,33 @@ class _RegisterState extends State<Register> {
 //8315238808
   GetOtp(Object modal) {
     print(modal);
-   try{
-    ApiRepository().RegisterOTPVerification(modal).then((value) {
-      print("Response register-->${jsonDecode(value.body)}");
-      var msg = jsonDecode(value.body);
-      var body = RegisterOTPModalClass.fromJson(jsonDecode(value.body));
+    try {
+      ApiRepository().RegisterOTPVerification(modal).then((value) {
+        print("Response register-->${jsonDecode(value.body)}");
+        var msg = jsonDecode(value.body);
+        var body = RegisterOTPModalClass.fromJson(jsonDecode(value.body));
 
-     // print("body data ${body.Msg} ${body.Otp}");
-      if (msg['status'] == false) {
-        Fluttertoast.showToast(
-            msg: "${msg['error'].toString()}", toastLength: Toast.LENGTH_LONG);
+        // print("body data ${body.Msg} ${body.Otp}");
+        if (msg['status'] == false) {
+          Fluttertoast.showToast(
+              msg: "${msg['error'].toString()}",
+              toastLength: Toast.LENGTH_LONG);
 
-        showAlertDialog(context, msg['error'].toString(), "Error");
-      } else {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return OTP(
-            Name: Name,
-            Mobile: Mobile,
-            //  Email: Email,
-            OtpCode: body.Otp.toString(),
-          );
-        }));
-      }
-    });
-  }catch(e) {
-     showAlertDialog(context, e.toString(), "Exception");
-  }
+          showAlertDialog(context, msg['error'].toString(), "Error");
+        } else {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return OTP(
+              Name: Name,
+              Mobile: Mobile,
+              //  Email: Email,
+              OtpCode: body.Otp.toString(),
+            );
+          }));
+        }
+      });
+    } catch (e) {
+      showAlertDialog(context, e.toString(), "Exception");
+    }
   }
 
   @override
@@ -272,8 +273,7 @@ class _RegisterState extends State<Register> {
     );
   }
 
-  showAlertDialog(BuildContext context,String Message,String type) {
-
+  showAlertDialog(BuildContext context, String Message, String type) {
     // set up the button
     Widget okButton = TextButton(
       child: Text("OK"),

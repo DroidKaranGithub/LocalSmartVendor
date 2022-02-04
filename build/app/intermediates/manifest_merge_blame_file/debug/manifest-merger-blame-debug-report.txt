@@ -1,0 +1,294 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.shop_project"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:4:5-67
+14-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:5:5-70
+15-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:5:22-68
+16    <uses-permission android:name="android.permission.READ_SMS" />
+16-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:6:5-66
+16-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:6:22-64
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:7:5-80
+17-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:7:22-78
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+18-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-77
+18-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-74
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+19-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+20-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-65
+21    <uses-permission android:name="android.permission.BLUETOOTH" />
+21-->[com.github.canardoux:flutter_sound_core:9.1.2] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c340868f3d9b0a6c1aecfb94d86ee628/jetified-flutter_sound_core-9.1.2/AndroidManifest.xml:11:5-68
+21-->[com.github.canardoux:flutter_sound_core:9.1.2] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c340868f3d9b0a6c1aecfb94d86ee628/jetified-flutter_sound_core-9.1.2/AndroidManifest.xml:11:22-65
+22    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- Include required permissions for Google Maps API to run. -->
+22-->[com.github.canardoux:flutter_sound_core:9.1.2] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c340868f3d9b0a6c1aecfb94d86ee628/jetified-flutter_sound_core-9.1.2/AndroidManifest.xml:13:5-80
+22-->[com.github.canardoux:flutter_sound_core:9.1.2] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c340868f3d9b0a6c1aecfb94d86ee628/jetified-flutter_sound_core-9.1.2/AndroidManifest.xml:13:22-77
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+23-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+28
+29    <application
+29-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:8:4-45:19
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.6.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:10:9-43
+33        android:label="LocalsMart Vendor" >
+33-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:9:9-42
+34        <activity
+34-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:11:9-39:20
+35            android:name="com.example.shop_project.MainActivity"
+35-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:12:13-41
+36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:15:13-163
+37            android:hardwareAccelerated="true"
+37-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:16:13-47
+38            android:launchMode="singleTop"
+38-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:13:13-43
+39            android:theme="@style/LaunchTheme"
+39-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:14:13-47
+40            android:windowSoftInputMode="adjustResize" >
+40-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:17:13-55
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+48-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:22:13-25:17
+49                android:name="io.flutter.embedding.android.NormalTheme"
+49-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:23:15-70
+50                android:resource="@style/NormalTheme" />
+50-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:24:15-52
+51            <!--
+52                 Displays an Android View that continues showing the launch screen
+53                 Drawable until Flutter paints its first frame, then this splash
+54                 screen fades out. A splash screen is useful to avoid any visual
+55                 gap between the end of Android's launch screen and the painting of
+56                 Flutter's first frame.
+57            -->
+58            <meta-data
+58-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:31:13-34:17
+59                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+59-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:32:15-79
+60                android:resource="@drawable/launch_background" />
+60-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:33:15-61
+61
+62            <intent-filter>
+62-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:35:13-38:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:36:17-68
+63-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:36:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:37:17-76
+65-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:37:27-74
+66            </intent-filter>
+67        </activity>
+68        <!--
+69             Don't delete the meta-data below.
+70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+71        -->
+72        <meta-data
+72-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:42:9-44:33
+73            android:name="flutterEmbedding"
+73-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:43:13-44
+74            android:value="2" />
+74-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:44:13-30
+75
+76        <provider
+76-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+77            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+77-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+78            android:authorities="com.example.shop_project.flutter.image_provider"
+78-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+79            android:exported="false"
+79-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+80            android:grantUriPermissions="true" >
+80-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+81            <meta-data
+81-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+83                android:resource="@xml/flutter_image_picker_file_paths" />
+83-->[:image_picker] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+84        </provider>
+85
+86        <activity
+86-->[:url_launcher_android] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+87            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+87-->[:url_launcher_android] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+88            android:exported="false"
+88-->[:url_launcher_android] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+89            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+89-->[:url_launcher_android] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+90
+91        <receiver
+91-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:40
+92            android:name="com.github.florent37.assets_audio_player.notification.NotificationActionReceiver"
+92-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-108
+93            android:exported="false" />
+93-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+94        <receiver
+94-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-21:20
+95            android:name="com.github.florent37.assets_audio_player.notification.CustomMediaButtonReceiver"
+95-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-107
+96            android:exported="false" >
+96-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-37
+97            <intent-filter>
+97-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-20:29
+98                <action android:name="android.intent.action.MEDIA_BUTTON" />
+98-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-77
+98-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:19:25-74
+99            </intent-filter>
+100        </receiver>
+101
+102        <service
+102-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-33:19
+103            android:name="com.github.florent37.assets_audio_player.notification.NotificationService"
+103-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-101
+104            android:enabled="true"
+104-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-35
+105            android:exported="true" >
+105-->[:assets_audio_player] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+106
+107            <!--
+108            <intent-filter>
+109                <action android:name="android.intent.action.MEDIA_BUTTON" />
+110            </intent-filter>
+111            -->
+112        </service>
+113
+114        <activity
+114-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:20
+115            android:name="com.razorpay.CheckoutActivity"
+115-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-57
+116            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+116-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:20:13-83
+117            android:exported="false"
+117-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+118            android:label="Razorpay Checkout"
+118-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-46
+119            android:theme="@style/CheckoutTheme" >
+119-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:21:13-49
+120            <intent-filter>
+120-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:22:13-28:29
+121                <action android:name="android.intent.action.MAIN" />
+121-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:36:17-68
+121-->/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/android/app/src/main/AndroidManifest.xml:36:25-66
+122
+123                <data
+123-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:25:17-27:47
+124                    android:host="rzp.io"
+124-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:26:21-42
+125                    android:scheme="io.rzp" />
+125-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:27:21-44
+126            </intent-filter>
+127        </activity>
+128
+129        <receiver
+129-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-20:20
+130            android:name="com.razorpay.RzpTokenReceiver"
+130-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-57
+131            android:exported="false" >
+131-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+132            <intent-filter>
+132-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:29
+133                <action android:name="rzp.device_token.share" />
+133-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-65
+133-->[:razorpay_flutter] /Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-62
+134            </intent-filter>
+135        </receiver>
+136
+137        <uses-library
+137-->[androidx.window:window:1.0.0-beta04] /Users/magespider/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+138            android:name="androidx.window.extensions"
+138-->[androidx.window:window:1.0.0-beta04] /Users/magespider/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+139            android:required="false" />
+139-->[androidx.window:window:1.0.0-beta04] /Users/magespider/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+140        <uses-library
+140-->[androidx.window:window:1.0.0-beta04] /Users/magespider/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+141            android:name="androidx.window.sidecar"
+141-->[androidx.window:window:1.0.0-beta04] /Users/magespider/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+142            android:required="false" />
+142-->[androidx.window:window:1.0.0-beta04] /Users/magespider/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+143
+144        <meta-data
+144-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:31:9-33:58
+145            android:name="com.razorpay.plugin.googlepay_all"
+145-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:32:13-61
+146            android:value="com.razorpay.RzpGpayMerged" />
+146-->[com.razorpay:checkout:1.6.15] /Users/magespider/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/AndroidManifest.xml:33:13-55
+147
+148        <activity
+148-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+149            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+149-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+150            android:excludeFromRecents="true"
+150-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+151            android:exported="false"
+151-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+152            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+152-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+153        <!--
+154            Service handling Google Sign-In user revocation. For apps that do not integrate with
+155            Google Sign-In, this service will never be started.
+156        -->
+157        <service
+157-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+158            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+158-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+159            android:exported="true"
+159-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+160            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+160-->[com.google.android.gms:play-services-auth:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+161        <uses-library
+161-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+162            android:name="org.apache.http.legacy"
+162-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+163            android:required="false" />
+163-->[com.google.android.gms:play-services-maps:17.0.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/e1f2c764bda9296bdc41ef4fd83aa989/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+164
+165        <activity
+165-->[com.google.android.gms:play-services-base:17.5.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+166            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+166-->[com.google.android.gms:play-services-base:17.5.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+167            android:exported="false"
+167-->[com.google.android.gms:play-services-base:17.5.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+168            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+168-->[com.google.android.gms:play-services-base:17.5.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+169
+170        <meta-data
+170-->[com.google.android.gms:play-services-basement:17.6.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c26502361ec4dc2b3cb8ca567b1e8c51/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+171            android:name="com.google.android.gms.version"
+171-->[com.google.android.gms:play-services-basement:17.6.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c26502361ec4dc2b3cb8ca567b1e8c51/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+172            android:value="@integer/google_play_services_version" />
+172-->[com.google.android.gms:play-services-basement:17.6.0] /Users/magespider/.gradle/caches/transforms-2/files-2.1/c26502361ec4dc2b3cb8ca567b1e8c51/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+173    </application>
+174
+175</manifest>

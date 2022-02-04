@@ -40,7 +40,6 @@ class Material extends StatelessWidget {
       routes: {
         Profile.id: (context) => Profile(),
         EditProfile.id: (context) => EditProfile(),
-      
         SplashScreen.id: (context) => SplashScreen(),
         Login.id: (context) => Login(),
         Register.id: (context) => Register(),

@@ -2,12 +2,9 @@ class TransactionAvailableBalanceModalClass {
   String? id;
   String? wallet_balance;
 
-
-
   TransactionAvailableBalanceModalClass({
     this.id,
     this.wallet_balance,
-
   });
 
   TransactionAvailableBalanceModalClass.fromJson(Map<String, dynamic> json) {

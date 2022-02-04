@@ -50,16 +50,11 @@ class _ResponsesState extends State<Responses> {
   List<ResponseModalClass> responseDetails = [];
   final GlobalKey<ScaffoldState> _key = GlobalKey();
 
-
   AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
   bool? IsPlaying;
   var prev1;
   List AudioValue = [];
   var AudioValueData;
-
-
-
-
 
   Future _makingPhoneCall(String mobile) async {
     String url = "tel:" + mobile;
@@ -294,7 +289,7 @@ class _ResponsesState extends State<Responses> {
           if (bodyData['data'] != null) {
             print(bodyData);
             responseDetails.add(ResponseModalClass.fromJson(bodyData['data']));
-            AudioValueData=bodyData['data']['file']['file_path'];
+            AudioValueData = bodyData['data']['file']['file_path'];
           } else {
             print("object");
             print(responseDetails.length);
@@ -511,73 +506,77 @@ class _ResponsesState extends State<Responses> {
                           //         ),
                           //       )
                           //     :
-                          onTap: AudioValueData== null || AudioValueData==""
+                          onTap: AudioValueData == null || AudioValueData == ""
                               ? () {
-                                print('no audio');
-                                Fluttertoast.showToast(
-                                msg:
-                                "Audio file is not available");
+                                  print('no audio');
+                                  Fluttertoast.showToast(
+                                      msg: "Audio file is not available");
                                 }
-                                : () async {
-                                print(AudioValueData.toString());
-                                if(IsPlaying==false){
-
-                                  try {
+                              : () async {
                                   print(AudioValueData.toString());
-                                  await assetsAudioPlayer.open(Audio.network(AudioValueData.toString()),);
-                                  assetsAudioPlayer.play();
-                                  setState(() {
-                                    IsPlaying=true;
-                                  });
-                                  assetsAudioPlayer
-                                      .playlistFinished
-                                      .listen((event) {
-                                      if (event == true) {
-                                        setState(() {
-                                        IsPlaying = false;
-                                        });
-                                  }});
-                                  } catch (t) {
-                                  //mp3 unreachable
-                                  print(t);
-                                }
-                            }else{
-                              assetsAudioPlayer.stop();
-                              setState(() {
-                              IsPlaying=false;
-                              });
-                            }
-          // print(inquriesData[index].file);
-          },
-                          child:IsPlaying == true
+                                  if (IsPlaying == false) {
+                                    try {
+                                      print(AudioValueData.toString());
+                                      await assetsAudioPlayer.open(
+                                        Audio.network(
+                                            AudioValueData.toString()),
+                                      );
+                                      assetsAudioPlayer.play();
+                                      setState(() {
+                                        IsPlaying = true;
+                                      });
+                                      assetsAudioPlayer.playlistFinished
+                                          .listen((event) {
+                                        if (event == true) {
+                                          setState(() {
+                                            IsPlaying = false;
+                                          });
+                                        }
+                                      });
+                                    } catch (t) {
+                                      //mp3 unreachable
+                                      print(t);
+                                    }
+                                  } else {
+                                    assetsAudioPlayer.stop();
+                                    setState(() {
+                                      IsPlaying = false;
+                                    });
+                                  }
+                                  // print(inquriesData[index].file);
+                                },
+                          child: IsPlaying == true
                               ? CircleAvatar(
-                            backgroundColor: DarkBlue,
-                            child: Icon(
-                              Icons.pause,
-                              color: Colors.white,
-                            ),
-                          )
+                                  backgroundColor: DarkBlue,
+                                  child: Icon(
+                                    Icons.pause,
+                                    color: Colors.white,
+                                  ),
+                                )
                               : Image.asset("assets/images/play.png")),
                       IsPlaying == true
-                          ?
-                      Text("Stop",
-                          textAlign: TextAlign.center,
-                          style:
-                              Theme.of(context).textTheme.headline1!.copyWith(
+                          ? Text("Stop",
+                              textAlign: TextAlign.center,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline1!
+                                  .copyWith(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 40,
                                     color: Color.fromRGBO(21, 166, 255,
                                         1), //background: rgba(21, 166, 255, 1);
-                                  )):
-                      Text("Play",
-                          textAlign: TextAlign.center,
-                          style:
-                          Theme.of(context).textTheme.headline1!.copyWith(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 40,
-                            color: Color.fromRGBO(21, 166, 255,
-                                1), //background: rgba(21, 166, 255, 1);
-                          )),
+                                  ))
+                          : Text("Play",
+                              textAlign: TextAlign.center,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline1!
+                                  .copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 40,
+                                    color: Color.fromRGBO(21, 166, 255,
+                                        1), //background: rgba(21, 166, 255, 1);
+                                  )),
                     ],
                   ),
                   SizedBox(height: height / 5),
@@ -1027,13 +1026,10 @@ class _ResponsesState extends State<Responses> {
                   ,
                   Container(),
                   SizedBox(height: height / 3),
-                  if (responseMessage!=null)
+                  if (responseMessage != null)
                     Text(
                       responseMessage.toString(),
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline1!
-                          .copyWith(
+                      style: Theme.of(context).textTheme.headline1!.copyWith(
                           color: Colors.red,
                           fontSize: 18,
                           fontWeight: FontWeight.normal),
@@ -1103,10 +1099,9 @@ class _ResponsesState extends State<Responses> {
     );
   }
 
-  void setErrorMsg(String msg)
-  {
+  void setErrorMsg(String msg) {
     setState(() {
-      responseMessage=msg;
+      responseMessage = msg;
     });
   }
 

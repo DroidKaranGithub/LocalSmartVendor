@@ -5,7 +5,7 @@ class InquriesModalClass {
   String? user_id;
   String? dataStatus;
   String? is_vegue;
- String? audio_file;
+  String? audio_file;
   String? file_upload;
   String? description;
   String? category_id;
@@ -26,7 +26,7 @@ class InquriesModalClass {
     this.user_id,
     this.dataStatus,
     this.is_vegue,
-       this.audio_file,
+    this.audio_file,
     this.file_upload,
     this.description,
     this.category_id,
@@ -49,7 +49,7 @@ class InquriesModalClass {
       user_id: jsonData['user_id'].toString(),
       dataStatus: jsonData['status'].toString(),
       is_vegue: jsonData['is_vegue'].toString(),
-      audio_file : jsonData['audio_file'].toString(),
+      audio_file: jsonData['audio_file'].toString(),
       //audio_file: jsonData,
       file_upload: jsonData['file_upload'].toString(),
       description: jsonData['description'].toString(),
@@ -59,13 +59,12 @@ class InquriesModalClass {
       deleted_at: jsonData['deleted_at'].toString(),
       date: jsonData['date'].toString(),
       category: jsonData['category'].toString(),
-        file :
-        jsonData['file'] != null ? new InquriesFile.fromJson(jsonData['file']) : null,
+      file: jsonData['file'] != null
+          ? new InquriesFile.fromJson(jsonData['file'])
+          : null,
     );
   }
 }
-
-
 
 class InquriesFile {
   String? id;
@@ -81,15 +80,15 @@ class InquriesFile {
 
   InquriesFile(
       {this.id,
-        this.userId,
-        this.name,
-        this.description,
-        this.fileName,
-        this.fileSize,
-        this.fileType,
-        this.filePath,
-        this.createdAt,
-        this.updatedAt});
+      this.userId,
+      this.name,
+      this.description,
+      this.fileName,
+      this.fileSize,
+      this.fileType,
+      this.filePath,
+      this.createdAt,
+      this.updatedAt});
 
   InquriesFile.fromJson(Map<String, dynamic> json) {
     id = json['id'].toString();

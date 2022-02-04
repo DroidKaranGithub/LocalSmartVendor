@@ -46,17 +46,15 @@ class _EditProfileState extends State<EditProfile> {
     request.fields['name'] = userName.text;
     request.fields['email'] = email.text;
 
-    if (personalProfilepath.isNotEmpty ) {
+    if (personalProfilepath.isNotEmpty) {
       var profile_image = await http.MultipartFile.fromPath(
           "profile_image", (personalProfilepath));
       request.files.add(profile_image);
-
     }
     //business_kyc_doc
 
     print(request.files);
     print(request.fields);
-
 
     //   // var shop_images2 = await http.MultipartFile.fromPath(
     //   //     "shop_images[1]", shopImages[1].path);
@@ -65,31 +63,35 @@ class _EditProfileState extends State<EditProfile> {
 
     print(url);
     request.send().then((response) => {
-      http.Response.fromStream(response).then((value) {
-        try {
-          //print(value.body);
-          // setState(() {
-          //   Loader.hideLoader(loader);
-          // });
-          var data = jsonDecode(value.body);
-          print(data);
-          Fluttertoast.showToast(msg: 'Profile Updated');
-          print("_______________________");
-          print(data['data']['id'].toString());
-          Shared.pref.setString("UserName", data['data']['name'].toString());
-          Shared.pref.setString("mobileNumber",data['data']['phone'].toString() );
-          Shared.pref.setString("UserEmail", data['data']['email'].toString());
-          Shared.pref.setString("PROFILE_IMAGE", data['data']['profile_image'].toString());
+          http.Response.fromStream(response).then((value) {
+            try {
+              //print(value.body);
+              // setState(() {
+              //   Loader.hideLoader(loader);
+              // });
+              var data = jsonDecode(value.body);
+              print(data);
+              Fluttertoast.showToast(msg: 'Profile Updated');
+              print("_______________________");
+              print(data['data']['id'].toString());
+              Shared.pref
+                  .setString("UserName", data['data']['name'].toString());
+              Shared.pref
+                  .setString("mobileNumber", data['data']['phone'].toString());
+              Shared.pref
+                  .setString("UserEmail", data['data']['email'].toString());
+              Shared.pref.setString(
+                  "PROFILE_IMAGE", data['data']['profile_image'].toString());
 
-          Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (BuildContext context) {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (BuildContext context) {
                 return Profile();
               }));
-        } catch (error) {
-          print("error data $error");
-        }
-      })
-    });
+            } catch (error) {
+              print("error data $error");
+            }
+          })
+        });
 //    ApiRepository().createShop(modal)
 //    user_id:13
 // shop_name:sdfsdkjxzhkjzxczx
@@ -107,17 +109,19 @@ class _EditProfileState extends State<EditProfile> {
   }
 
   @override
-  void initState()
-  {
-    var name=Shared.pref.getString('UserName').toString().isNotEmpty?Shared.pref.getString('UserName').toString():'';
-    var useremail=Shared.pref.getString('UserEmail').toString().isNotEmpty?Shared.pref.getString('UserEmail').toString():'';
-    var email2=Shared.pref.getString('UserEmail').toString();
-    if(email2==null || email2 =="null")
-    {
-      email2="";
+  void initState() {
+    var name = Shared.pref.getString('UserName').toString().isNotEmpty
+        ? Shared.pref.getString('UserName').toString()
+        : '';
+    var useremail = Shared.pref.getString('UserEmail').toString().isNotEmpty
+        ? Shared.pref.getString('UserEmail').toString()
+        : '';
+    var email2 = Shared.pref.getString('UserEmail').toString();
+    if (email2 == null || email2 == "null") {
+      email2 = "";
     }
-    userName.text=name;
-    email.text=email2;
+    userName.text = name;
+    email.text = email2;
   }
 
   @override
@@ -125,22 +129,17 @@ class _EditProfileState extends State<EditProfile> {
     loader = Loader.overlayLoader(context);
     var profile_img_var;
 
-    if(Shared.pref
-        .getString("PROFILE_IMAGE")
-        .toString()=="")
-      {
-        profile_img_var="https://th.bing.com/th/id/OIP.kcaJsnMsMsFRdU6d1m2v6AHaHa?pid=ImgDet&rs=1";
-      }else{
-      profile_img_var=Shared.pref
-          .getString("PROFILE_IMAGE")
-          .toString();
+    if (Shared.pref.getString("PROFILE_IMAGE").toString() == "") {
+      profile_img_var =
+          "https://th.bing.com/th/id/OIP.kcaJsnMsMsFRdU6d1m2v6AHaHa?pid=ImgDet&rs=1";
+    } else {
+      profile_img_var = Shared.pref.getString("PROFILE_IMAGE").toString();
     }
     var height = AppBar().preferredSize.height;
     return Scaffold(
-      body: Form(
-        key: _formKey,
-        child:
-        Container(
+        body: Form(
+      key: _formKey,
+      child: Container(
         color: Colors.white,
         child: Column(
           children: [
@@ -170,19 +169,21 @@ class _EditProfileState extends State<EditProfile> {
                             CircleAvatar(
                               radius: 35,
                               backgroundColor: DarkBlue,
-                              child:
-                              ClipRRect(
+                              child: ClipRRect(
                                   borderRadius: BorderRadius.circular(40),
-                                  child: personalProfilepath
-                                      .toString()!=""
-                                      ? Image.file(File(personalProfilepath),scale: 1.5,fit: BoxFit.cover,)
+                                  child: personalProfilepath.toString() != ""
+                                      ? Image.file(
+                                          File(personalProfilepath),
+                                          scale: 1.5,
+                                          fit: BoxFit.cover,
+                                        )
                                       : Image.network(profile_img_var.toString()
 
-                                    // Shared.pref
-                                    //     .getString("PROFILE_IMAGE")
-                                    //     .toString(),
-                                    // fit: BoxFit.cover,
-                                  )),
+                                          // Shared.pref
+                                          //     .getString("PROFILE_IMAGE")
+                                          //     .toString(),
+                                          // fit: BoxFit.cover,
+                                          )),
                             ),
                             SizedBox(
                               height: 10,
@@ -234,7 +235,6 @@ class _EditProfileState extends State<EditProfile> {
 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
                         children: [
                           Text(
                             'Name',
@@ -257,7 +257,7 @@ class _EditProfileState extends State<EditProfile> {
                                 Name = val;
                               });
                             },
-                            width:MediaQuery.of(context).size.width * 0.62,
+                            width: MediaQuery.of(context).size.width * 0.62,
                             validator: (value) {
                               if (value == null) {
                                 return "Enter Name";
@@ -273,11 +273,10 @@ class _EditProfileState extends State<EditProfile> {
                                 .textTheme
                                 .headline1!
                                 .copyWith(
-                                fontWeight: FontWeight.bold,
-                                color: orange.withOpacity(0.5),
-                                fontSize: 16),
-                          )
-                          ,
+                                    fontWeight: FontWeight.bold,
+                                    color: orange.withOpacity(0.5),
+                                    fontSize: 16),
+                          ),
                         ],
                       ),
                       SizedBox(
@@ -299,7 +298,7 @@ class _EditProfileState extends State<EditProfile> {
                           // SizedBox(width: 20,),
                           InputField(
                             controller: email,
-                           // initialValue: Email,
+                            // initialValue: Email,
                             onChanged: (val) {
                               setState(() {
                                 Email = val;
@@ -355,7 +354,9 @@ class _EditProfileState extends State<EditProfile> {
                             child: Padding(
                               padding: const EdgeInsets.all(15),
                               child: Text(
-                                Shared.pref.getString('mobileNumber').toString(),
+                                Shared.pref
+                                    .getString('mobileNumber')
+                                    .toString(),
                                 style: Theme.of(context)
                                     .textTheme
                                     .headline1!
@@ -416,7 +417,8 @@ class _EditProfileState extends State<EditProfile> {
 
                             updateProfileApi();
                             Loader.hideLoader(loader);
-                          };
+                          }
+                          ;
                         },
                         child: ColorButton(
                           RoundCorner: true,
@@ -433,10 +435,8 @@ class _EditProfileState extends State<EditProfile> {
           ],
         ),
       ),
-    )
-    );
+    ));
   }
-
 
   Future getPersonalKycImage() async {
     PickedFile? image = await imagePicker.getImage(source: ImageSource.gallery);

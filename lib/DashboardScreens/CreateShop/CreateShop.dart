@@ -396,8 +396,8 @@ class _CreateShopState extends State<CreateShop> {
                                         // ),
                                         Expanded(
                                           child: TextFormField(
-                                            validator: (value){
-                                              if(value.toString().isEmpty){
+                                            validator: (value) {
+                                              if (value.toString().isEmpty) {
                                                 return "Shop Name Can't Be Empty";
                                               }
                                             },
@@ -451,8 +451,8 @@ class _CreateShopState extends State<CreateShop> {
                                         ),
                                         Expanded(
                                           child: TextFormField(
-                                            validator: (value){
-                                              if(value.toString().isEmpty){
+                                            validator: (value) {
+                                              if (value.toString().isEmpty) {
                                                 return "Owner Name Can't Be Empty";
                                               }
                                             },
@@ -667,8 +667,8 @@ class _CreateShopState extends State<CreateShop> {
                                         ),
                                         Expanded(
                                           child: TextFormField(
-                                            validator: (value){
-                                              if(value.toString().isEmpty){
+                                            validator: (value) {
+                                              if (value.toString().isEmpty) {
                                                 return "Contact Number Can't Be Empty";
                                               }
                                             },
@@ -719,7 +719,6 @@ class _CreateShopState extends State<CreateShop> {
                                         // SizedBox(width: 20,),
                                         Expanded(
                                           child: TextFormField(
-
                                             autocorrect: false,
                                             // onChanged: (value) {
                                             //   bool emailValid = RegExp(
@@ -775,8 +774,8 @@ class _CreateShopState extends State<CreateShop> {
                                         // SizedBox(width: 20,),
                                         Expanded(
                                           child: TextFormField(
-                                            validator: (value){
-                                              if(value.toString().isEmpty){
+                                            validator: (value) {
+                                              if (value.toString().isEmpty) {
                                                 return "Shop Address Can't Be Empty";
                                               }
                                             },
@@ -821,7 +820,6 @@ class _CreateShopState extends State<CreateShop> {
                                         // SizedBox(width: 20,),
                                         Expanded(
                                           child: TextFormField(
-
                                             autocorrect: false,
                                             controller: websiteUrl,
                                             decoration: InputDecoration(
@@ -908,10 +906,11 @@ class _CreateShopState extends State<CreateShop> {
                                         Expanded(
                                           flex: 2,
                                           child: Padding(
-                                            padding: const EdgeInsets.only(right: 32.0),
-                                            child: DropdownButtonFormField<String>(
-
-                                           //   validator: (value)=> value == null ? "Select Personal KYC" : null,
+                                            padding: const EdgeInsets.only(
+                                                right: 32.0),
+                                            child:
+                                                DropdownButtonFormField<String>(
+                                              //   validator: (value)=> value == null ? "Select Personal KYC" : null,
 
                                               isExpanded: true,
                                               //elevation: 5,
@@ -921,7 +920,8 @@ class _CreateShopState extends State<CreateShop> {
                                                     .textTheme
                                                     .headline1!
                                                     .copyWith(
-                                                        fontWeight: FontWeight.bold,
+                                                        fontWeight:
+                                                            FontWeight.bold,
                                                         color: DarkBlue,
                                                         fontSize: 20),
                                               ),
@@ -929,7 +929,8 @@ class _CreateShopState extends State<CreateShop> {
                                                   .textTheme
                                                   .headline1!
                                                   .copyWith(
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                       color: DarkBlue,
                                                       fontSize: 16),
                                               items: <String>[
@@ -1016,7 +1017,8 @@ class _CreateShopState extends State<CreateShop> {
                                         Expanded(
                                           flex: 2,
                                           child: Padding(
-                                            padding: const EdgeInsets.only(right: 32.0),
+                                            padding: const EdgeInsets.only(
+                                                right: 32.0),
                                             child: DropdownButton<String>(
                                               isExpanded: true,
                                               //elevation: 5,
@@ -1026,7 +1028,8 @@ class _CreateShopState extends State<CreateShop> {
                                                     .textTheme
                                                     .headline1!
                                                     .copyWith(
-                                                        fontWeight: FontWeight.bold,
+                                                        fontWeight:
+                                                            FontWeight.bold,
                                                         color: DarkBlue,
                                                         fontSize: 20),
                                               ),
@@ -1034,7 +1037,8 @@ class _CreateShopState extends State<CreateShop> {
                                                   .textTheme
                                                   .headline1!
                                                   .copyWith(
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                       color: DarkBlue,
                                                       fontSize: 16),
                                               items: <String>[
@@ -1146,28 +1150,31 @@ class _CreateShopState extends State<CreateShop> {
                                                     return Stack(children: [
                                                       Container(
                                                           //height: 20,
-                                                          width: MediaQuery
-                                                                  .of(context)
+                                                          width: MediaQuery.of(
+                                                                  context)
                                                               .size
                                                               .width,
-                                                          margin: EdgeInsets
-                                                              .all(10.0),
+                                                          margin:
+                                                              EdgeInsets.all(
+                                                                  10.0),
                                                           decoration: BoxDecoration(
-                                                              color: Colors
-                                                                  .grey.shade400,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .all(Radius
-                                                                          .circular(
-                                                                              20))),
+                                                              color: Colors.grey
+                                                                  .shade400,
+                                                              borderRadius: BorderRadius
+                                                                  .all(Radius
+                                                                      .circular(
+                                                                          20))),
                                                           child: Image.file(
-                                                            File(shopImages[index]
+                                                            File(shopImages[
+                                                                    index]
                                                                 .path),
-                                                            fit: BoxFit.fitWidth,
+                                                            fit:
+                                                                BoxFit.fitWidth,
                                                           )),
                                                       Row(
                                                         mainAxisAlignment:
-                                                            MainAxisAlignment.end,
+                                                            MainAxisAlignment
+                                                                .end,
                                                         children: [
                                                           IconButton(
                                                               onPressed: () {
@@ -1190,14 +1197,14 @@ class _CreateShopState extends State<CreateShop> {
                                       // RoundCorner: true,
 
                                       onPressed: () async {
-
                                         if (_FormKey.currentState!.validate()) {
                                           Overlay.of(context)!.insert(loader);
 
                                           createShopApi(int.parse(categoryID[
-                                                int.parse(chooseCategoryId!)]));
+                                              int.parse(chooseCategoryId!)]));
                                           Loader.hideLoader(loader);
-                                        };
+                                        }
+                                        ;
                                         // FocusScope.of(context).unfocus();
                                         // Overlay.of(context)!.insert(loader);
 
@@ -1226,7 +1233,8 @@ class _CreateShopState extends State<CreateShop> {
                                       },
                                       style: ButtonStyle(
                                           backgroundColor:
-                                              MaterialStateProperty.all(DarkBlue),
+                                              MaterialStateProperty.all(
+                                                  DarkBlue),
                                           fixedSize: MaterialStateProperty.all(
                                               Size(200, 50)),
                                           shape: MaterialStateProperty.all(
@@ -1248,7 +1256,8 @@ class _CreateShopState extends State<CreateShop> {
                                                     color: Colors.white,
                                                     fontSize: 22,
                                                     letterSpacing: 1,
-                                                    fontWeight: FontWeight.bold),
+                                                    fontWeight:
+                                                        FontWeight.bold),
                                           ),
                                         ],
                                       ),

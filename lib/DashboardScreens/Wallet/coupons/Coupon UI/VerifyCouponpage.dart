@@ -2,7 +2,6 @@ import 'package:shop_project/DashboardScreens/Wallet/CommonWidgets/Commonwidgets
 import 'package:shop_project/DashboardScreens/Wallet/Transactions/TransactionsUI/TransactionsScreen.dart';
 import 'package:flutter/material.dart';
 
-
 class VerifyCouponPage extends StatefulWidget {
   @override
   _VerifyCouponPageState createState() => _VerifyCouponPageState();
@@ -64,16 +63,19 @@ class _VerifyCouponPageState extends State<VerifyCouponPage> {
               Center(
                 child: Visibility(
                     visible: isVisible,
-                    child:  Container(
+                    child: Container(
                       width: 400,
                       height: 50,
                       color: Colors.green[200],
-                      child: Center(child: Text("Coupon is verified", style: TextStyle(
-                          color: Color(0xff516B00),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 20),)),
-                    )
-                ),
+                      child: Center(
+                          child: Text(
+                        "Coupon is verified",
+                        style: TextStyle(
+                            color: Color(0xff516B00),
+                            fontWeight: FontWeight.w600,
+                            fontSize: 20),
+                      )),
+                    )),
               ),
               Visibility(
                 visible: isVerify,
@@ -81,15 +83,17 @@ class _VerifyCouponPageState extends State<VerifyCouponPage> {
                     width: 400,
                     height: 50,
                     color: Colors.red[200],
-                    child: Center(child: Text("Coupon is verified",style: TextStyle(
-                        color: Color(0xff8A0909),
-                        fontWeight: FontWeight.w800,
-                        fontSize: 20),))
-                ),
+                    child: Center(
+                        child: Text(
+                      "Coupon is verified",
+                      style: TextStyle(
+                          color: Color(0xff8A0909),
+                          fontWeight: FontWeight.w800,
+                          fontSize: 20),
+                    ))),
               ),
             ],
           ),
-
           Container(
             margin: EdgeInsets.only(top: 28.0, left: 16.0),
             child: Column(
@@ -128,9 +132,7 @@ class _VerifyCouponPageState extends State<VerifyCouponPage> {
               margin: EdgeInsets.only(top: 28.0, left: 16.0),
               child: ElevatedButton.icon(
                   style: commonBlueButtons(),
-                  onPressed: () {
-
-                  },
+                  onPressed: () {},
                   icon: Icon(
                     Icons.check_circle,
                     color: Color(0xffffffff),
@@ -150,11 +152,11 @@ class _VerifyCouponPageState extends State<VerifyCouponPage> {
                   Column(
                     children: [
                       InkWell(
-                        onTap:(){
+                        onTap: () {
                           setState(() {
                             isVisible = !isVisible;
                           });
-                        } ,
+                        },
                         child: CircleAvatar(
                           radius: 35,
                           backgroundColor: Colors.green,
@@ -176,10 +178,9 @@ class _VerifyCouponPageState extends State<VerifyCouponPage> {
                   Column(
                     children: [
                       InkWell(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
                             isVerify = !isVerify;
-
                           });
                         },
                         child: CircleAvatar(
@@ -210,7 +211,8 @@ class _VerifyCouponPageState extends State<VerifyCouponPage> {
               child: ElevatedButton.icon(
                   style: commonBlueButtons(),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> transactionsScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => transactionsScreen()));
                   },
                   icon: Icon(
                     Icons.check_circle,

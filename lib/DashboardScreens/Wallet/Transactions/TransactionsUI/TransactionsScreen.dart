@@ -10,8 +10,6 @@ import 'package:shop_project/DashboardScreens/Wallet/Transactions/Models/Transac
 import 'package:shop_project/DashboardScreens/Wallet/wallet/Wallet%20UI/Wallet.dart';
 import '';
 
-
-
 class transactionsScreen extends StatefulWidget {
   @override
   _transactionsScreenState createState() => _transactionsScreenState();
@@ -20,27 +18,22 @@ class transactionsScreen extends StatefulWidget {
 class _transactionsScreenState extends State<transactionsScreen> {
   final GlobalKey<ScaffoldState> _key1 = GlobalKey();
   String? abalance;
-  bool loadBalance=false;
-  List<TransactionModalClass> transactionList=[];
-  bool loadTransaction=false;
-
+  bool loadBalance = false;
+  List<TransactionModalClass> transactionList = [];
+  bool loadTransaction = false;
 
   getData() {
-
     transactionList.clear();
     print("inside get Data");
     int? userId = Shared.pref.getInt("userPerticularId");
-    TransactionApi()
-        .GetTransactionList(userId)
-        .then((value) {
+    TransactionApi().GetTransactionList(userId).then((value) {
       var dataValue = jsonDecode(value.body);
       print(dataValue);
       if (dataValue['status'] == false) {
         Fluttertoast.showToast(
             msg: 'no transaction', toastLength: Toast.LENGTH_LONG);
         setState(() {
-          loadTransaction=true;
-
+          loadTransaction = true;
         });
       } else {
         for (Map<String, dynamic> jsonData in dataValue['data']) {
@@ -71,7 +64,6 @@ class _transactionsScreenState extends State<transactionsScreen> {
     });
   }
 
-
   void getAbalanseData() {
     int? userId = Shared.pref.getInt("userPerticularId");
     TransactionApi().GetAvailableBalance(userId).then((value) {
@@ -79,13 +71,11 @@ class _transactionsScreenState extends State<transactionsScreen> {
       print("Balanse Data ${response}");
       print(response['data']['id']);
       setState(() {
-        abalance=response['data']['wallet_balance'].toString();
-        loadBalance=true;
+        abalance = response['data']['wallet_balance'].toString();
+        loadBalance = true;
       });
     });
-
   }
-
 
   @override
   void initState() {
@@ -95,13 +85,12 @@ class _transactionsScreenState extends State<transactionsScreen> {
     getData();
   }
 
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          key: _key1,
-          drawer: drawer(),
+      key: _key1,
+      drawer: drawer(),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
@@ -159,9 +148,7 @@ class _transactionsScreenState extends State<transactionsScreen> {
           padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
           child: Divider(),
         ),
-        Container(
-            height: 400,
-            child: CaditDebitList()),
+        Container(height: 400, child: CaditDebitList()),
         Padding(
           padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
           child: Divider(),
@@ -172,7 +159,8 @@ class _transactionsScreenState extends State<transactionsScreen> {
             child: ElevatedButton.icon(
                 style: commonBlueButtons(),
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=> walletUI()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => walletUI()));
                 },
                 icon: Icon(
                   Icons.add_circle_outline,
@@ -188,11 +176,12 @@ class _transactionsScreenState extends State<transactionsScreen> {
     );
   }
 
-  Widget TransactionDateFormated(date_str)
-  {
-    var dateFormate = DateFormat("d MMM yy, h:m").format(DateTime.parse(date_str));
+  Widget TransactionDateFormated(date_str) {
+    var dateFormate =
+        DateFormat("d MMM yy, h:m").format(DateTime.parse(date_str));
     return Text("$dateFormate");
   }
+
   Widget TransactionCard() {
     return Card(
       elevation: 5.0,
@@ -218,15 +207,15 @@ class _transactionsScreenState extends State<transactionsScreen> {
                     ),
                   ),
                 ),
-                loadBalance?
-                Text(
-                  "₹ $abalance",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ):CircularProgressIndicator(),
-
+                loadBalance
+                    ? Text(
+                        "₹ $abalance",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      )
+                    : CircularProgressIndicator(),
               ],
             ),
           ),
@@ -255,104 +244,16 @@ class _transactionsScreenState extends State<transactionsScreen> {
         shrinkWrap: true,
         itemBuilder: (context, index) {
           return InkWell(
-            onTap: (){  setState(() {
-              transactionBottomSheet(context,transactionList[index]);
-            }); },
+            onTap: () {
+              setState(() {
+                transactionBottomSheet(context, transactionList[index]);
+              });
+            },
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 50,
-                      width: 50,
-                      margin: EdgeInsets.all(16.0),
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                          Color(0xff1D5AF0),
-                          Color(0xffAEBEE3)
-                        ]),
-                        borderRadius: BorderRadius.circular(25)
-
-                      ),
-                        child: Icon(Icons.arrow_downward_outlined, color: Colors.white,)),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          transactionList[index].transaction_type.toString(),
-                          style: commonTextStyles(),
-                        ),
-                        SizedBox(height: 20,),
-                        TransactionDateFormated(transactionList[index].created_at.toString()),
-                      ],
-                    ),
-                    Spacer(),
-                    Column(
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              "₹",
-                              style: TextStyle(fontSize: 22,fontWeight: FontWeight.w700),
-
-                            ),SizedBox(width: 5,),
-                            Text(
-                              transactionList[index].amount.toString(),
-                              style: TextStyle(fontSize: 16,fontWeight: FontWeight.w700),
-
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 20,),
-                        Text("Completed",style: commonTextStyles(),),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.arrow_forward_ios,color: Color(0xff09098A),size: 18,),
-                    )
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
-                  child: Divider(),
-                ),
-              ],
-            ),
-          );
-
-
-        });
-  }
-
-  transactionBottomSheet(context, TransactionModalClass trns){
-    var trns_txt="";
-    var amt=trns.amount;
-    if(trns.transaction_type=="credit")
-      {
-        trns_txt="Deposit Amount";
-      }else{
-      trns_txt="Widrawal Amount";
-    }
-    return showModalBottomSheet(
-        context: context,
-        builder: (context) {
-      return StatefulBuilder(
-        builder: (BuildContext context, StateSetter setState) {
-          return Container(
-           height: 600,
-            color: Color(0xffF1F2FB),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                         height: 50,
@@ -362,123 +263,267 @@ class _transactionsScreenState extends State<transactionsScreen> {
                             gradient: LinearGradient(
                                 begin: Alignment.topCenter,
                                 end: Alignment.bottomCenter,
-                                colors: [
-                                  Color(0xff1D5AF0),
-                                  Color(0xffAEBEE3)
-                                ]),
-                            borderRadius: BorderRadius.circular(25)
-
+                                colors: [Color(0xff1D5AF0), Color(0xffAEBEE3)]),
+                            borderRadius: BorderRadius.circular(25)),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Colors.white,
+                        )),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          transactionList[index].transaction_type.toString(),
+                          style: commonTextStyles(),
                         ),
-                        child: Icon(Icons.arrow_downward_outlined, color: Colors.white,)),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 16.0),
-                      child: Text(
-                        trns.transaction_type.toString(),
-                        style: commonTextStyles(),
-                      ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        TransactionDateFormated(
+                            transactionList[index].created_at.toString()),
+                      ],
                     ),
+                    Spacer(),
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              "₹",
+                              style: TextStyle(
+                                  fontSize: 22, fontWeight: FontWeight.w700),
+                            ),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Text(
+                              transactionList[index].amount.toString(),
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w700),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "Completed",
+                          style: commonTextStyles(),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.arrow_forward_ios,
+                        color: Color(0xff09098A),
+                        size: 18,
+                      ),
+                    )
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 18.0, right: 18.0,),
+                  padding:
+                      const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
                   child: Divider(),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        "$trns_txt",
-                        style: commonTextStyles()
-                      ),
-                      Text(
-                        "$amt INR",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(16.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                        Text("Status",style: commonTextStyles(),),
-                        Text("Completed".toUpperCase(),style: commonTextStyles(),),
-                      ],),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18.0, right: 18.0,),
-                      child: Divider(),
-                    ),
-                    Container(margin: EdgeInsets.all(16.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("Payment Method",style: commonTextStyles(),),
-                          Text("UPI Payment Option 1",style: commonTextStyles(),),
-                        ],),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18.0, right: 18.0,),
-                      child: Divider(),
-                    ),
-                    Container(margin: EdgeInsets.all(16.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("Created At",style: commonTextStyles(),),
-                          TransactionDateFormated(trns.created_at.toString()),
-                        ],),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18.0, right: 18.0,),
-                      child: Divider(),
-                    ),
-                    Container(margin: EdgeInsets.all(16.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("updated At",style: commonTextStyles(),),
-                          TransactionDateFormated(trns.updated_at.toString()),
-                        ],),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18.0, right: 18.0,),
-                      child: Divider(),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(2.0),
-                      child: Container(
-                        margin: EdgeInsets.all(2.0),
-                        height: 30,
-                        width: MediaQuery.of(context).size.width,
-                        child: Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text("Transaction Successful",style: TextStyle(fontSize: 16,),),
-                        ),
-                        decoration: BoxDecoration(
-                          color: Color(0xffAEBEE3),
-                          borderRadius: BorderRadius.circular(18),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-
               ],
             ),
           );
-        },
-      );
+        });
+  }
+
+  transactionBottomSheet(context, TransactionModalClass trns) {
+    var trns_txt = "";
+    var amt = trns.amount;
+    if (trns.transaction_type == "credit") {
+      trns_txt = "Deposit Amount";
+    } else {
+      trns_txt = "Widrawal Amount";
     }
-    );
+    return showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return StatefulBuilder(
+            builder: (BuildContext context, StateSetter setState) {
+              return Container(
+                height: 600,
+                color: Color(0xffF1F2FB),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                            height: 50,
+                            width: 50,
+                            margin: EdgeInsets.all(16.0),
+                            decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                      Color(0xff1D5AF0),
+                                      Color(0xffAEBEE3)
+                                    ]),
+                                borderRadius: BorderRadius.circular(25)),
+                            child: Icon(
+                              Icons.arrow_downward_outlined,
+                              color: Colors.white,
+                            )),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 16.0),
+                          child: Text(
+                            trns.transaction_type.toString(),
+                            style: commonTextStyles(),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 18.0,
+                        right: 18.0,
+                      ),
+                      child: Divider(),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text("$trns_txt", style: commonTextStyles()),
+                          Text(
+                            "$amt INR",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          margin: EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Status",
+                                style: commonTextStyles(),
+                              ),
+                              Text(
+                                "Completed".toUpperCase(),
+                                style: commonTextStyles(),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 18.0,
+                            right: 18.0,
+                          ),
+                          child: Divider(),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Payment Method",
+                                style: commonTextStyles(),
+                              ),
+                              Text(
+                                "UPI Payment Option 1",
+                                style: commonTextStyles(),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 18.0,
+                            right: 18.0,
+                          ),
+                          child: Divider(),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Created At",
+                                style: commonTextStyles(),
+                              ),
+                              TransactionDateFormated(
+                                  trns.created_at.toString()),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 18.0,
+                            right: 18.0,
+                          ),
+                          child: Divider(),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "updated At",
+                                style: commonTextStyles(),
+                              ),
+                              TransactionDateFormated(
+                                  trns.updated_at.toString()),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 18.0,
+                            right: 18.0,
+                          ),
+                          child: Divider(),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(2.0),
+                          child: Container(
+                            margin: EdgeInsets.all(2.0),
+                            height: 30,
+                            width: MediaQuery.of(context).size.width,
+                            child: Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: Text(
+                                "Transaction Successful",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                            decoration: BoxDecoration(
+                              color: Color(0xffAEBEE3),
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              );
+            },
+          );
+        });
   }
 }

@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 
-
-GradentColor(){
+GradentColor() {
   return LinearGradient(
-
-    begin: Alignment.topCenter,
+      begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
       colors: [Color(0xff09098A), Color(0xffffffff)]);
-
 }

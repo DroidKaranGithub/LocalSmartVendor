@@ -4,7 +4,6 @@ import 'package:http/http.dart';
 import 'package:shop_project/Constants/Constant.dart';
 
 class TransactionApi {
-
   Future<http.Response> GetAvailableBalance(uId) async {
     //https://viragtea.com/localsmart/public/api/shop/query/list?shop_id=1
     String Url = BaseUrl + "get-wallet-amount/$uId";
@@ -15,10 +14,11 @@ class TransactionApi {
   }
 
   Future<http.Response> GetTransactionList(uId) async {
-    var type="";
-    var page="1";
+    var type = "";
+    var page = "1";
     //https://viragtea.com/localsmart/public/api/shop/query/list?shop_id=1
-    String Url = BaseUrl + "get-transactions?user_id=$uId&transaction_type&page=$page";
+    String Url =
+        BaseUrl + "get-transactions?user_id=$uId&transaction_type&page=$page";
     var body = await http.get(
       Uri.parse(Url),
     );

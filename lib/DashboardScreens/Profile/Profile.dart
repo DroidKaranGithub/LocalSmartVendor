@@ -1,5 +1,3 @@
-
-
 import 'package:shop_project/Constants/ColorButton.dart';
 import 'package:shop_project/Constants/Constant.dart';
 import 'package:shop_project/Constants/LoaderClass.dart';
@@ -18,11 +16,10 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     loader = Loader.overlayLoader(context);
-    var email=Shared.pref.getString('UserEmail').toString();
-    if(email==null || email =="null")
-      {
-        email="No email";
-      }
+    var email = Shared.pref.getString('UserEmail').toString();
+    if (email == null || email == "null") {
+      email = "No email";
+    }
 
     var height = AppBar().preferredSize.height;
 
@@ -57,22 +54,26 @@ class _ProfileState extends State<Profile> {
                             CircleAvatar(
                               radius: 35,
                               backgroundColor: DarkBlue,
-                              child:
-                              ClipRRect(
+                              child: ClipRRect(
                                   borderRadius: BorderRadius.circular(40),
                                   child: Shared.pref
-                                      .getString("PROFILE_IMAGE")
-                                      .toString()!=""
-                                      ? Image.network(Shared.pref
-                                      .getString("PROFILE_IMAGE")
-                                      .toString(),scale: 1,fit: BoxFit.cover,)
+                                              .getString("PROFILE_IMAGE")
+                                              .toString() !=
+                                          ""
+                                      ? Image.network(
+                                          Shared.pref
+                                              .getString("PROFILE_IMAGE")
+                                              .toString(),
+                                          scale: 1,
+                                          fit: BoxFit.cover,
+                                        )
                                       : Image.network(
-                                      "https://th.bing.com/th/id/OIP.kcaJsnMsMsFRdU6d1m2v6AHaHa?pid=ImgDet&rs=1"
-                                    // Shared.pref
-                                    //     .getString("PROFILE_IMAGE")
-                                    //     .toString(),
-                                    // fit: BoxFit.cover,
-                                  )),
+                                          "https://th.bing.com/th/id/OIP.kcaJsnMsMsFRdU6d1m2v6AHaHa?pid=ImgDet&rs=1"
+                                          // Shared.pref
+                                          //     .getString("PROFILE_IMAGE")
+                                          //     .toString(),
+                                          // fit: BoxFit.cover,
+                                          )),
                             ),
                             SizedBox(
                               height: 10,
@@ -183,7 +184,9 @@ class _ProfileState extends State<Profile> {
                             child: Padding(
                               padding: const EdgeInsets.all(15),
                               child: Text(
-                                Shared.pref.getString('mobileNumber').toString(),
+                                Shared.pref
+                                    .getString('mobileNumber')
+                                    .toString(),
                                 style: Theme.of(context)
                                     .textTheme
                                     .headline1!
@@ -240,8 +243,8 @@ class _ProfileState extends State<Profile> {
                         onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
-                                return EditProfile();
-                              }));
+                            return EditProfile();
+                          }));
                         },
                         child: ColorButton(
                           RoundCorner: true,
