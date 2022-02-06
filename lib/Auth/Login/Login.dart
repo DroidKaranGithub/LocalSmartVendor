@@ -118,7 +118,8 @@ class _LoginState extends State<Login> {
 
 //         setState(() {});
           } else {
-            Fluttertoast.showToast(msg: body.Msg!);
+            // Fluttertoast.showToast(msg: body.Msg!);
+
           }
         });
       }
@@ -139,7 +140,19 @@ class _LoginState extends State<Login> {
           responseMessage = '';
         });
       } else {
-        Fluttertoast.showToast(msg: msg['msg']);
+        // Fluttertoast.showToast(msg: msg['msg']);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.red,
+            content: Text(
+              msg['error'],
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+        );
         setState(() {
           responseMessage = msg['msg'];
         });
@@ -188,6 +201,14 @@ class _LoginState extends State<Login> {
               width: MediaQuery.of(context).size.width * 1,
               child: Stack(
                 children: [
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Image.asset('assets/images/VectorlightBlue.png'),
+                  ),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Image.asset('assets/images/VectorBlue.png'),
+                  ),
                   Center(
                     child: Form(
                       key: _formKey,
@@ -429,12 +450,6 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                   ),
-                  Align(
-                      alignment: Alignment.bottomRight,
-                      child: Image.asset('assets/images/VectorlightBlue.png')),
-                  Align(
-                      alignment: Alignment.bottomRight,
-                      child: Image.asset('assets/images/VectorBlue.png'))
                 ],
               ),
             ),

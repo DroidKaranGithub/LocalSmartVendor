@@ -1,0 +1,19 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml:1:70-106
+		INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml
+INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml
+		ADDED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sound-9.1.2/android/src/main/AndroidManifest.xml

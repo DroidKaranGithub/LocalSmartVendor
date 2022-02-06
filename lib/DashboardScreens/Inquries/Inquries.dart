@@ -223,7 +223,7 @@ class _InquriesState extends State<Inquries> {
               'Inquiries',
               style: Theme.of(context).textTheme.headline1!.copyWith(
                     fontWeight: FontWeight.bold,
-                    fontSize: 40,
+                    fontSize: 30,
                     color: DarkBlue,
                   ),
             ),

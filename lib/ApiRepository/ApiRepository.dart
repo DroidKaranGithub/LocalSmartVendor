@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 import 'package:shop_project/Constants/Constant.dart';
@@ -60,6 +61,7 @@ class ApiRepository {
   Future<http.Response> GetInquries(shopId) async {
     //https://viragtea.com/localsmart/public/api/shop/query/list?shop_id=1
     String Url = BaseUrl + "get-shop-notify-queries/$shopId";
+    debugPrint("GET_INQUIRY_URL-->$Url");
     var body = await http.get(
       Uri.parse(Url),
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_project/DashboardScreens/CreateShop/CreateShop.dart';
 import 'package:shop_project/DashboardScreens/ShopList/shopList.dart';
+import 'package:shop_project/constant.dart';
 
 import 'Auth/Login/Login.dart';
 import 'Constants/Constant.dart';
@@ -45,26 +46,23 @@ class _drawerState extends State<drawer> {
                             color: orange,
                             borderRadius: BorderRadius.circular(40)),
                         child: ClipRRect(
-                            borderRadius: BorderRadius.circular(40),
-                            child: Shared.pref
-                                        .getString("PROFILE_IMAGE")
-                                        .toString() !=
-                                    ''
-                                ? FadeInImage.assetNetwork(
-                                    placeholder:
-                                        'assets/images/loading_animated.gif',
-                                    image: Shared.pref
-                                        .getString("PROFILE_IMAGE")
-                                        .toString(),
-                                    fit: BoxFit.cover,
-                                  )
-                                : Image.network(
-                                    "https://th.bing.com/th/id/OIP.kcaJsnMsMsFRdU6d1m2v6AHaHa?pid=ImgDet&rs=1"
-                                    // Shared.pref
-                                    //     .getString("PROFILE_IMAGE")
-                                    //     .toString(),
-                                    // fit: BoxFit.cover,
-                                    )),
+                          borderRadius: BorderRadius.circular(40),
+                          child: Shared.pref
+                                      .getString("PROFILE_IMAGE")
+                                      .toString() !=
+                                  ''
+                              ? FadeInImage.assetNetwork(
+                                  placeholder: PROFILE_PLACE_HOLDER,
+                                  image: Shared.pref
+                                      .getString("PROFILE_IMAGE")
+                                      .toString(),
+                                  fit: BoxFit.cover,
+                                )
+                              : Image.network(
+                                  PROFILE_PLACE_HOLDER,
+                                  fit: BoxFit.cover,
+                                ),
+                        ),
                       ),
                       SizedBox(
                         height: 10,
