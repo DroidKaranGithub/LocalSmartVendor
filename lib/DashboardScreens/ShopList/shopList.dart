@@ -100,7 +100,7 @@ class _ShopListState extends State<ShopList> {
             child: Column(
               children: [
                 SizedBox(
-                  height: height,
+                  height: 30,
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
@@ -109,34 +109,57 @@ class _ShopListState extends State<ShopList> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Expanded(
-                        flex: 1,
-                        child: InkWell(
-                            onTap: () {
-                              _key1.currentState!.openDrawer();
-                            },
-                            child: Icon(
-                              Icons.menu_rounded,
-                              color: DarkBlue,
-                            )),
+                      IconButton(
+                        onPressed: () {
+                          _key1.currentState!.openDrawer();
+                        },
+                        icon: Icon(
+                          Icons.menu_rounded,
+                          size: 25,
+                          color: DarkBlue,
+                        ),
                       ),
+                      // Expanded(
+                      //   flex: 1,
+                      //   child: Padding(
+                      //     padding: const EdgeInsets.only(left: 16.0),
+                      //     child: InkWell(
+                      //         onTap: () {
+                      //           _key1.currentState!.openDrawer();
+                      //         },
+                      //         child: Icon(
+                      //           Icons.menu_rounded,
+                      //           size: 30,
+                      //           color: DarkBlue,
+                      //         )),
+                      //   ),
+                      // ),
                       Expanded(
                         flex: 10,
                         child: Container(
                           //        color: Colors.green,
                           child: Center(
-                            child: Text(
-                              'Shop List',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headline1!
-                                  .copyWith(
-                                      color: DarkBlue,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold),
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                top: 8,
+                                right: 30,
+                              ),
+                              child: Text(
+                                'Shop List',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline1!
+                                    .copyWith(
+                                        color: DarkBlue,
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ),
+                      ),
+                      SizedBox(
+                        width: 40,
                       ),
                     ],
                   ),
@@ -153,126 +176,124 @@ class _ShopListState extends State<ShopList> {
                             itemCount: shopListData.length,
                             itemBuilder: (cnt, index) {
                               return Container(
-                                margin: EdgeInsets.all(20),
-                                padding: EdgeInsets.all(10),
+                                margin: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 10,
+                                ),
+                                // padding: EdgeInsets.all(5),
                                 // ignore: prefer _const_constructors
                                 decoration: BoxDecoration(
-                                    // ignore: prefer_const_literals_to_create_immutables
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Color.fromRGBO(0, 0, 0, 0.2))
-                                    ],
-                                    // ignore: prefer _const_constructors
-                                    color: Color.fromRGBO(237, 237, 237,
-                                        1), //background: rgba(237, 237, 237, 1);
-
-                                    borderRadius: BorderRadius.all(
-                                        Radius.circular(10.0))),
+                                  // ignore: prefer_const_literals_to_create_immutables
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Color.fromRGBO(0, 0, 0, 0.2))
+                                  ],
+                                  // ignore: prefer _const_constructors
+                                  color: Color.fromRGBO(237, 237, 237,
+                                      1), //background: rgba(237, 237, 237, 1);
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(10.0),
+                                  ),
+                                ),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Expanded(
-                                      flex: 2,
-                                      child: Container(
-//                                          color: Colors.red,
-                                        padding: EdgeInsets.symmetric(
-                                            vertical: 20, horizontal: 15),
-                                        margin: EdgeInsets.symmetric(
-                                            horizontal: 10),
-                                        //width: 50,
-                                        //    height: 70,
-                                        child: GestureDetector(
-                                          onTap: () {
-                                            // EditShop
-                                            Navigator.push(context,
-                                                MaterialPageRoute(
-                                                    builder: (cnt) {
-                                              return EditShop(
-                                                  shop_id:
-                                                      shopListData[index].id);
-                                            }));
-                                          },
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text(
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                          vertical: 20, horizontal: 10),
+                                      margin:
+                                          EdgeInsets.symmetric(horizontal: 10),
+                                      //width: 50,
+                                      //    height: 70,
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          // EditShop
+                                          Navigator.push(context,
+                                              MaterialPageRoute(builder: (cnt) {
+                                            return EditShop(
+                                              shop_id: shopListData[index].id,
+                                            );
+                                          }));
+                                        },
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              shopListData[index]
+                                                  .shop_name
+                                                  .toString(),
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .headline1!
+                                                  .copyWith(
+                                                      color: DarkBlue,
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.bold),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                            SizedBox(height: 5),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                  // boxShadow: [
+                                                  //   BoxShadow(color: Color.fromRGBO(0, 0, 0, 0.2))
+                                                  // ],
+                                                  // shape: BoxShape.circle,
+                                                  gradient: LinearGradient(
+                                                    colors: [
+                                                      Color.fromRGBO(
+                                                          181, 197, 255, 1),
+                                                      Color.fromRGBO(
+                                                          111, 138, 235, 0),
+                                                    ],
+                                                  ),
+                                                  // color: Color.fromRGBO(
+                                                  //     225,
+                                                  //     225,
+                                                  //     238,
+                                                  //     1), //background: rgba(237, 237, 237, 1);
+
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                          Radius.circular(
+                                                              10.0))),
+                                              padding: EdgeInsets.symmetric(
+                                                  horizontal: 10, vertical: 5),
+                                              child: Text(
                                                 shopListData[index]
-                                                    .shop_name
+                                                    .category
                                                     .toString(),
                                                 style: Theme.of(context)
                                                     .textTheme
                                                     .headline1!
                                                     .copyWith(
                                                         color: DarkBlue,
-                                                        fontSize: 20,
+                                                        fontSize: 16,
                                                         fontWeight:
                                                             FontWeight.bold),
-                                                textAlign: TextAlign.center,
                                               ),
-                                              SizedBox(height: 5),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                    // boxShadow: [
-                                                    //   BoxShadow(color: Color.fromRGBO(0, 0, 0, 0.2))
-                                                    // ],
-                                                    // shape: BoxShape.circle,
-                                                    gradient: LinearGradient(
-                                                      colors: [
-                                                        Color.fromRGBO(
-                                                            181, 197, 255, 1),
-                                                        Color.fromRGBO(
-                                                            111, 138, 235, 0),
-                                                      ],
-                                                    ),
-                                                    // color: Color.fromRGBO(
-                                                    //     225,
-                                                    //     225,
-                                                    //     238,
-                                                    //     1), //background: rgba(237, 237, 237, 1);
-
-                                                    borderRadius:
-                                                        BorderRadius.all(
-                                                            Radius.circular(
-                                                                10.0))),
-                                                padding: EdgeInsets.symmetric(
-                                                    horizontal: 20,
-                                                    vertical: 5),
-                                                child: Text(
-                                                  shopListData[index]
-                                                      .category
-                                                      .toString(),
-                                                  style: Theme.of(context)
-                                                      .textTheme
-                                                      .headline1!
-                                                      .copyWith(
-                                                          color: DarkBlue,
-                                                          fontSize: 20,
-                                                          fontWeight:
-                                                              FontWeight.bold),
-                                                ),
-                                              )
-                                            ],
-                                          ),
+                                            )
+                                          ],
                                         ),
-                                        // color: Colors.blue,
                                       ),
+                                      // color: Colors.blue,
                                     ),
-                                    Expanded(
-                                      child: GestureDetector(
-                                        onTap: () {
-                                          print(
-                                              "list shop ${shopListData[index].id.toString()}");
-                                          Shared.pref.setString(
-                                              "shopId",
-                                              shopListData[index]
-                                                  .id
-                                                  .toString());
-                                          Navigator.push(context,
-                                              MaterialPageRoute(builder: (cnt) {
-                                            return Inquries();
-                                          }));
-                                        },
+                                    GestureDetector(
+                                      onTap: () {
+                                        print(
+                                            "list shop ${shopListData[index].id.toString()}");
+                                        Shared.pref.setString("shopId",
+                                            shopListData[index].id.toString());
+                                        Navigator.push(context,
+                                            MaterialPageRoute(builder: (cnt) {
+                                          return Inquries();
+                                        }));
+                                      },
+                                      child: Padding(
+                                        padding:
+                                            const EdgeInsets.only(right: 10.0),
                                         child: Container(
                                           child: CircleAvatar(
                                             backgroundColor: Colors.transparent,
@@ -303,7 +324,7 @@ class _ShopListState extends State<ShopList> {
                                                         .headline1!
                                                         .copyWith(
                                                             color: DarkBlue,
-                                                            fontSize: 22,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight
                                                                     .bold),

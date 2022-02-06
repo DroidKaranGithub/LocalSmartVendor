@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/drawable/exo_rounded_rectangle.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/drawable/exo_rounded_rectangle.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_icon_background.xml"
+    }
+]

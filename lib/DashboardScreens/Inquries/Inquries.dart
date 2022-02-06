@@ -207,7 +207,7 @@ class _InquriesState extends State<Inquries> {
     var height = AppBar().preferredSize.height;
     return Column(
       children: [
-        SizedBox(height: height),
+        SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -677,21 +677,29 @@ class _InquriesState extends State<Inquries> {
         return Future<bool>.value(true);
       },
       child: Scaffold(
-          drawer: drawer(),
-          drawerEnableOpenDragGesture: false,
-          key: _key,
-          backgroundColor: Colors.white,
-          body: Container(
-              height: MediaQuery.of(context).size.height * 1,
-              width: MediaQuery.of(context).size.width * 1,
-              child: StatusCode
-                  ? Padding(
-                      padding: const EdgeInsets.all(15),
-                      child: Column(
-                        children: [UpperBody(context), LowerBody(context)],
-                      ),
-                    )
-                  : Container())),
+        drawer: drawer(),
+        drawerEnableOpenDragGesture: false,
+        key: _key,
+        backgroundColor: Colors.white,
+        body: Container(
+          height: MediaQuery.of(context).size.height * 1,
+          width: MediaQuery.of(context).size.width * 1,
+          child: StatusCode
+              ? Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Column(
+                    children: [UpperBody(context), LowerBody(context)],
+                  ),
+                )
+              : Container(
+                  child: Center(
+                    child: CircularProgressIndicator(
+                      color: DarkBlue,
+                    ),
+                  ),
+                ),
+        ),
+      ),
     );
   }
 }

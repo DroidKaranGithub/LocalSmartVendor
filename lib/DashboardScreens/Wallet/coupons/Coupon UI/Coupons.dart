@@ -35,11 +35,11 @@ class _CouponsPageState extends State<CouponsPage> {
   Widget CouponsPageUi() {
     return Container(
       height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width * 2,
+      // width: MediaQuery.of(context).size.width * 2,
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 28.0, left: 16.0),
+            margin: EdgeInsets.only(top: 30.0, left: 10.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -50,12 +50,12 @@ class _CouponsPageState extends State<CouponsPage> {
                     },
                     icon: Icon(
                       Icons.menu,
-                      size: 30,
+                      size: 25,
                       color: Color(0xff09098A),
                     )),
                 Expanded(
                   child: Container(
-                      padding: EdgeInsets.only(right: 64.0),
+                      padding: EdgeInsets.only(right: 64.0, top: 10.0),
                       alignment: Alignment.center,
                       child: Text(
                         "Coupons",
@@ -99,7 +99,10 @@ class _CouponsPageState extends State<CouponsPage> {
                   ],
                 )),
           ),
-          Container(child: CoupenDetailForm()),
+          Expanded(
+            child: CoupenDetailForm(),
+          ),
+          // Container(child: CoupenDetailForm()),
           SizedBox(
             height: 35,
           ),

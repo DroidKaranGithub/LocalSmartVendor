@@ -104,7 +104,7 @@ class _drawerState extends State<drawer> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                return CreateShop();
+                                return ShopList();
                               }));
                             },
                             child: Row(

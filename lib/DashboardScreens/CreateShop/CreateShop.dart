@@ -318,7 +318,7 @@ class _CreateShopState extends State<CreateShop> {
                           child: Column(
                             children: [
                               SizedBox(
-                                height: height,
+                                height: 30,
                               ),
                               Container(
                                 width: MediaQuery.of(context).size.width,

@@ -24,6 +24,9 @@ class ApiRepository {
   Future<http.Response> LoginOTPVerification(Object modal) async {
     String Url = BaseUrl + "verification";
     var body = await http.post(Uri.parse(Url), body: modal);
+    debugPrint("LOGIN_URL->$Url");
+    debugPrint("LOGIN_modal->$modal");
+
     return body;
   }
 

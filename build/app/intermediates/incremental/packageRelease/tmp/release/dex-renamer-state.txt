@@ -1,0 +1,4 @@
+#Sun Feb 06 15:42:42 IST 2022
+base.0=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

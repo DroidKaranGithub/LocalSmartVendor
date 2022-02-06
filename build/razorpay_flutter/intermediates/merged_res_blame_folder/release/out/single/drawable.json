@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/rzp_secured_by_bg.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable/rzp_secured_by_bg.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/rzp_white_border_black_bg.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable/rzp_white_border_black_bg.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/rzp_green_button.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable/rzp_green_button.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/rzp_loader_circle.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable/rzp_loader_circle.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/rzp_border_bottom.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable/rzp_border_bottom.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/corner.xml",
+        "source": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/fluttertoast/intermediates/packaged_res/release/drawable/corner.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/rzp_border.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable/rzp_border.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/toast_bg.xml",
+        "source": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/fluttertoast/intermediates/packaged_res/release/drawable/toast_bg.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable/rzp_poweredby.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable/rzp_poweredby.png"
+    }
+]

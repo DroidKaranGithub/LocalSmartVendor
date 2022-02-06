@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_styled_settings_list_item.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_styled_settings_list_item.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_styled_settings_list.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_styled_settings_list.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_styled_player_view.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_styled_player_view.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_styled_sub_settings_list_item.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_styled_sub_settings_list_item.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_lines_media.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_big_media_custom.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_player_view.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_player_view.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_media_action.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_track_selection_dialog.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_track_selection_dialog.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_media.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_styled_player_control_rewind_button.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_styled_player_control_rewind_button.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_big_media.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_styled_player_control_view.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_styled_player_control_view.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_player_control_view.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_player_control_view.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_list_divider.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_list_divider.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_media_cancel_action.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_media_custom.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/589dfa6d6de1ec9c4ae5b397ffc456e7/media-1.2.1/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/exo_styled_player_control_ffwd_button.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/layout/exo_styled_player_control_ffwd_button.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/assets_audio_player/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    }
+]

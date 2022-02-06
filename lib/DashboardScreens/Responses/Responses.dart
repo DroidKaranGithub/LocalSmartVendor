@@ -332,7 +332,7 @@ class _ResponsesState extends State<Responses> {
     var height = AppBar().preferredSize.height;
     return Column(
       children: [
-        SizedBox(height: height),
+        SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

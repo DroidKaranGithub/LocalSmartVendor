@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/flutter_sound/intermediates/res/merged/release/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/e828b54036d6cc1546800e2a7cc1196c/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/flutter_sound/intermediates/incremental/mergeReleaseResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/e828b54036d6cc1546800e2a7cc1196c/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
