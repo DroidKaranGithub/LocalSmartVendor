@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-en-rXC/values-en-rXC.xml",
+=======
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-en-rXC/values-en-rXC.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +28,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/e828b54036d6cc1546800e2a7cc1196c/appcompat-1.2.0/res/values-en-rXC/values-en-rXC.xml",
+=======
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/e828b54036d6cc1546800e2a7cc1196c/appcompat-1.2.0/res/values-en-rXC/values-en-rXC.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

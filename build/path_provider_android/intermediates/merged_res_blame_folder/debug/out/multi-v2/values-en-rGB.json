@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/path_provider_android/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-en-rGB/values-en-rGB.xml",
+=======
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/path_provider_android/intermediates/res/merged/debug/values-en-rGB/values-en-rGB.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-en-rGB/values-en-rGB.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +23,17 @@
             ]
         },
         {
+<<<<<<< HEAD
             "outputFile": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/path_provider_android/intermediates/res/merged/debug/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-en-rGB/values-en-rGB.xml",
+=======
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/path_provider_android/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-en-rGB/values-en-rGB.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

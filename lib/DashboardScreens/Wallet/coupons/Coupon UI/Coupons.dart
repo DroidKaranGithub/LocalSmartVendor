@@ -35,11 +35,11 @@ class _CouponsPageState extends State<CouponsPage> {
   Widget CouponsPageUi() {
     return Container(
       height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width * 2,
+      // width: MediaQuery.of(context).size.width * 2,
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 28.0, left: 16.0),
+            margin: EdgeInsets.only(top: 30.0, left: 10.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -50,12 +50,12 @@ class _CouponsPageState extends State<CouponsPage> {
                     },
                     icon: Icon(
                       Icons.menu,
-                      size: 35,
+                      size: 25,
                       color: Color(0xff09098A),
                     )),
                 Expanded(
                   child: Container(
-                      padding: EdgeInsets.only(right: 64.0),
+                      padding: EdgeInsets.only(right: 64.0, top: 10.0),
                       alignment: Alignment.center,
                       child: Text(
                         "Coupons",
@@ -99,7 +99,10 @@ class _CouponsPageState extends State<CouponsPage> {
                   ],
                 )),
           ),
-          Container(height: 350, child: CoupenDetailForm()),
+          Expanded(
+            child: CoupenDetailForm(),
+          ),
+          // Container(child: CoupenDetailForm()),
           SizedBox(
             height: 35,
           ),
@@ -180,34 +183,44 @@ class _CouponsPageState extends State<CouponsPage> {
                         ],
                       ),
                     ),
-                    Container(
-                      padding: EdgeInsets.all(8.0),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Row(
-                            children: [
-                              Text(
-                                "Total coupons: ",
-                                style: commonTextStyles(),
-                              ),
-                              Text(
-                                "10",
-                                style: commonTextStyles(),
-                              ),
-                            ],
+                          Text(
+                            "Total coupons: ",
+                            style: commonTextStyles(),
                           ),
-                          Row(
-                            children: [
-                              Text(
-                                "Date Created: ",
-                                style: commonTextStyles(),
-                              ),
-                              Text(
-                                "25-oct-21",
-                                style: commonTextStyles(),
-                              ),
-                            ],
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          Expanded(
+                            child: Text(
+                              "10",
+                              style: commonTextStyles(),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Date Created: ",
+                            style: commonTextStyles(),
+                          ),
+                          SizedBox(
+                            width: 20.0,
+                          ),
+                          Expanded(
+                            child: Text(
+                              "25-oct-21",
+                              style: commonTextStyles(),
+                            ),
                           ),
                         ],
                       ),
@@ -220,8 +233,11 @@ class _CouponsPageState extends State<CouponsPage> {
                           Row(
                             children: [
                               Text(
-                                "coupon Used: ",
+                                "Coupon Used: ",
                                 style: commonTextStyles(),
+                              ),
+                              SizedBox(
+                                width: 20,
                               ),
                               Text(
                                 "2",
@@ -229,24 +245,30 @@ class _CouponsPageState extends State<CouponsPage> {
                               ),
                             ],
                           ),
-                          Row(
-                            children: [
-                              Text(
-                                "vallid upto: ",
-                                style: commonTextStyles(),
-                              ),
-                              Text(
-                                "25-Dec-21",
-                                style: commonTextStyles(),
-                              ),
-                            ],
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Vallid upto: ",
+                            style: commonTextStyles(),
+                          ),
+                          SizedBox(
+                            width: 40,
+                          ),
+                          Text(
+                            "25-Dec-21",
+                            style: commonTextStyles(),
                           ),
                         ],
                       ),
                     ),
                     Center(
                       child: Container(
-                        margin: EdgeInsets.only(top: 32.0),
+                        margin: EdgeInsets.only(top: 28.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [

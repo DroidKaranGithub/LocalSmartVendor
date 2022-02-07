@@ -49,7 +49,7 @@ class _buyCouponsPageState extends State<buyCouponsPage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: EdgeInsets.only(top: 28.0, left: 16.0),
+          margin: EdgeInsets.only(top: 30.0, left: 16.0),
           child: Row(
             children: [
               IconButton(
@@ -58,12 +58,12 @@ class _buyCouponsPageState extends State<buyCouponsPage> {
                   },
                   icon: Icon(
                     Icons.menu,
-                    size: 35,
+                    size: 30,
                     color: Color(0xff09098A),
                   )),
               Expanded(
                 child: Container(
-                    padding: EdgeInsets.only(right: 64.0),
+                    padding: EdgeInsets.only(right: 64.0, top: 4.0),
                     alignment: Alignment.center,
                     child: Text(
                       "Buy Coupons",

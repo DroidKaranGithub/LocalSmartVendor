@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c340868f3d9b0a6c1aecfb94d86ee628/jetified-flutter_sound_core-9.1.2/res/values-w820dp-v13/values-w820dp-v13.xml",
+=======
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c340868f3d9b0a6c1aecfb94d86ee628/jetified-flutter_sound_core-9.1.2/res/values-w820dp-v13/values-w820dp-v13.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

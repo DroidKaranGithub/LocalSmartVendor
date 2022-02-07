@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/otp_autofill/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/8eb6e05da774d40bbbefe1028376223c/jetified-play-services-base-17.1.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/otp_autofill/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/8eb6e05da774d40bbbefe1028376223c/jetified-play-services-base-17.1.0/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/otp_autofill/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/8eb6e05da774d40bbbefe1028376223c/jetified-play-services-base-17.1.0/res/color/common_google_signin_btn_text_light.xml"
+    }
+]

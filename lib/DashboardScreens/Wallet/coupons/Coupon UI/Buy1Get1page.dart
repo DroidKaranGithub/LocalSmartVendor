@@ -1,3 +1,4 @@
+import 'package:shop_project/Constants/Constant.dart';
 import 'package:shop_project/DashboardScreens/Wallet/CommonWidgets/Commonwidgets.dart';
 import 'package:shop_project/DashboardScreens/Wallet/coupons/Coupon%20UI/BuyCoupons.dart';
 import 'package:flutter/material.dart';
@@ -32,8 +33,8 @@ class _buyOneGetONePageState extends State<buyOneGetONePage> {
   Widget buyOneGetOneUI() {
     return Column(
       children: [
-        Container(
-          margin: EdgeInsets.only(top: 32.0, left: 16.0),
+        Padding(
+          padding: const EdgeInsets.only(top: 30.0, left: 16.0),
           child: Row(
             children: [
               IconButton(
@@ -42,34 +43,42 @@ class _buyOneGetONePageState extends State<buyOneGetONePage> {
                   },
                   icon: Icon(
                     Icons.menu,
-                    size: 35,
+                    size: 25,
                     color: Color(0xff09098A),
                   )),
               Expanded(
-                  child: Container(
-                      padding: EdgeInsets.only(right: 64.0),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Buy 1 Get 1 Free",
-                        style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w800,
-                            color: Color(0xff09098A)),
-                      )))
+                child: Container(
+                  padding: EdgeInsets.only(right: 64.0),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Buy 1 Get 1 Free",
+                    style: Theme.of(context).textTheme.headline1!.copyWith(
+                        color: DarkBlue,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
         Container(
           alignment: Alignment.centerLeft,
+<<<<<<< HEAD
           margin: EdgeInsets.only(top: 32.0, left: 22.0, bottom: 8),
+=======
+          margin: EdgeInsets.only(top: 32.0, left: 24.0, bottom: 10),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
           child: Text(
             "couponS REEDEMED".toUpperCase(),
             style: commonTextStyles(),
           ),
         ),
+        CommonListBuyOneGetOne(),
         // Container(
         //   height: MediaQuery.of(context).size.height/2.6,
         //   child: CommonListBuyOneGetOne(),),
+<<<<<<< HEAD
         SizedBox(
           height: 15.0,
         ),
@@ -96,6 +105,36 @@ class _buyOneGetONePageState extends State<buyOneGetONePage> {
             fit: BoxFit.cover,
           )),
         ),
+=======
+        // SizedBox(
+        //   height: 15.0,
+        // ),
+
+        // SizedBox(
+        //   height: 15,
+        // ),
+        // Expanded(child: CommonListBuyOneGetOne()),
+        // Container(
+        //   padding: EdgeInsets.all(8.0),
+        //   height: MediaQuery.of(context).size.height / 2.6,
+        //   child:
+        //   CommonListBuyOneGetOne(),
+        // ),
+        Container(
+          margin: EdgeInsets.only(top: 20.0, bottom: 20),
+          child: Buttons(),
+        ),
+        // Container(
+        //   alignment: Alignment.bottomCenter,
+        //   height: 250,
+        //   decoration: BoxDecoration(
+        //       image: DecorationImage(
+        //     image: AssetImage(
+        //         "assets/image/cartoon-friends-celebrating-birthday-with-balloons-gifts_74855-6951 1.png"),
+        //     fit: BoxFit.cover,
+        //   )),
+        // ),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
       ],
     );
   }
@@ -103,6 +142,11 @@ class _buyOneGetONePageState extends State<buyOneGetONePage> {
   Widget CommonListBuyOneGetOne() {
     return ListView.builder(
         itemCount: 5,
+<<<<<<< HEAD
+=======
+        physics: ScrollPhysics(),
+        shrinkWrap: true,
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
         itemBuilder: (context, index) {
           return Card(
             margin: EdgeInsets.all(16.0),

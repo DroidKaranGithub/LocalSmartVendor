@@ -3,6 +3,7 @@ import 'package:shop_project/Constants/Constant.dart';
 import 'package:shop_project/Constants/LoaderClass.dart';
 import 'package:shop_project/DashboardScreens/Profile/EditProfile.dart';
 import 'package:flutter/material.dart';
+import 'package:shop_project/constant.dart';
 
 class Profile extends StatefulWidget {
   static String id = "Profile";
@@ -20,7 +21,12 @@ class _ProfileState extends State<Profile> {
     if (email == null || email == "null") {
       email = "No email";
     }
+<<<<<<< HEAD
 
+=======
+    debugPrint(
+        "PROFILE_IMAGE--> ${Shared.pref.getString("PROFILE_IMAGE").toString()}");
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
     var height = AppBar().preferredSize.height;
 
     return Scaffold(
@@ -42,16 +48,18 @@ class _ProfileState extends State<Profile> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InkWell(
-                            onTap: () {
-                              Navigator.pop(context);
-                            },
-                            child: Image.asset(
-                              'assets/images/back1.png',
-                              scale: 1.2,
-                            )),
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: Image.asset(
+                            'assets/images/back1.png',
+                            // scale: 1.2,
+                          ),
+                        ),
                         Column(
                           children: [
                             CircleAvatar(
+<<<<<<< HEAD
                               radius: 35,
                               backgroundColor: DarkBlue,
                               child: ClipRRect(
@@ -74,6 +82,15 @@ class _ProfileState extends State<Profile> {
                                           //     .toString(),
                                           // fit: BoxFit.cover,
                                           )),
+=======
+                              maxRadius: 35,
+                              foregroundImage:
+                                  Shared.pref.getString("PROFILE_IMAGE") != ""
+                                      ? NetworkImage(Shared.pref
+                                          .getString("PROFILE_IMAGE")
+                                          .toString())
+                                      : NetworkImage(PROFILE_PLACE_HOLDER),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                             ),
                             SizedBox(
                               height: 10,

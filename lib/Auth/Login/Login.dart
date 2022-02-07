@@ -71,18 +71,42 @@ class _LoginState extends State<Login> {
       var msg = jsonDecode(value.body);
       print("msg $msg");
       if (msg['status'] == false) {
-        Fluttertoast.showToast(
-          msg: msg['error'],
+        // Fluttertoast.showToast(
+        //   msg: msg['error'],
+        // );
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.red,
+            content: Text(
+              msg['error'],
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
         );
         setState(() {
-          responseMessage = msg['error'];
+          // responseMessage = msg['error'];
         });
       } else {
-        Fluttertoast.showToast(
-          msg: msg['msg'],
+        // Fluttertoast.showToast(
+        //   msg: msg['msg'],
+        // );
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.red,
+            content: Text(
+              msg['msg'],
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
         );
         setState(() {
-          responseMessage = '';
+          // responseMessage = '';
         });
         ApiRepository()
             .Login(LoginModalClass(Mobile: Mobile.toString()).toJson())
@@ -118,7 +142,8 @@ class _LoginState extends State<Login> {
 
 //         setState(() {});
           } else {
-            Fluttertoast.showToast(msg: body.Msg!);
+            // Fluttertoast.showToast(msg: body.Msg!);
+
           }
         });
       }
@@ -139,7 +164,19 @@ class _LoginState extends State<Login> {
           responseMessage = '';
         });
       } else {
-        Fluttertoast.showToast(msg: msg['msg']);
+        // Fluttertoast.showToast(msg: msg['msg']);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.red,
+            content: Text(
+              msg['error'],
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+        );
         setState(() {
           responseMessage = msg['msg'];
         });
@@ -188,6 +225,14 @@ class _LoginState extends State<Login> {
               width: MediaQuery.of(context).size.width * 1,
               child: Stack(
                 children: [
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Image.asset('assets/images/VectorlightBlue.png'),
+                  ),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Image.asset('assets/images/VectorBlue.png'),
+                  ),
                   Center(
                     child: Form(
                       key: _formKey,
@@ -264,9 +309,12 @@ class _LoginState extends State<Login> {
                             child: InputField(
                               controller: controller,
                               onChanged: (val) {
+                                debugPrint("OTP_onChanged==>$Otp");
                                 Otp = val;
                               },
                               validator: (value) {
+                                Otp = value;
+                                debugPrint("OTP_validator==>$value");
                                 if (value == null) {
                                   return "Enter OTP";
                                 } else if (value.isEmpty) {
@@ -429,12 +477,6 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                   ),
-                  Align(
-                      alignment: Alignment.bottomRight,
-                      child: Image.asset('assets/images/VectorlightBlue.png')),
-                  Align(
-                      alignment: Alignment.bottomRight,
-                      child: Image.asset('assets/images/VectorBlue.png'))
                 ],
               ),
             ),

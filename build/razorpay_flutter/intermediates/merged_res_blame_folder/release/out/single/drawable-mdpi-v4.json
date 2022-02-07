@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_normal.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/googleg_disabled_color_18.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable-mdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/rzp_logo.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/drawable-mdpi-v4/rzp_logo.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/drawable-mdpi-v4/googleg_standard_color_18.png",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/drawable-mdpi-v4/googleg_standard_color_18.png"
+    }
+]

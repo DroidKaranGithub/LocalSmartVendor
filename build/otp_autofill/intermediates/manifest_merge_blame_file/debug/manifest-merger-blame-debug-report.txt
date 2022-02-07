@@ -3,6 +3,10 @@
 3    package="ru.surfstudio.otp_autofill" >
 4
 5    <uses-sdk android:minSdkVersion="19" />
+<<<<<<< HEAD
 5-->/Users/magespider/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/otp_autofill-2.1.0/android/src/main/AndroidManifest.xml
+=======
+5-->/Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/otp_autofill-2.1.0/android/src/main/AndroidManifest.xml
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
 6
 7</manifest>

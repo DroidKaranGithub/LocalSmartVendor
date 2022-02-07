@@ -92,12 +92,40 @@ class _transactionsScreenState extends State<transactionsScreen> {
       key: _key1,
       drawer: drawer(),
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            TransactionsUI(),
-          ],
-        ),
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                TransactionsUI(),
+              ],
+            ),
+          ),
+          Positioned(
+            bottom: 15.0,
+            left: 0.0,
+            right: 0.0,
+            child: Center(
+              child: Container(
+                margin: EdgeInsets.only(top: 28.0, left: 16.0),
+                child: ElevatedButton.icon(
+                    style: commonBlueButtons(),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => walletUI()));
+                    },
+                    icon: Icon(
+                      Icons.add_circle_outline,
+                      color: Color(0xffffffff),
+                    ),
+                    label: Text(
+                      "Add Funds",
+                      style: commonBlueButtonTextStyles(),
+                    )),
+              ),
+            ),
+          ),
+        ],
       ),
     ));
   }
@@ -107,7 +135,7 @@ class _transactionsScreenState extends State<transactionsScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: EdgeInsets.only(top: 28.0, left: 16.0),
+          margin: EdgeInsets.only(top: 28.0, left: 10.0),
           child: Row(
             children: [
               IconButton(
@@ -121,15 +149,21 @@ class _transactionsScreenState extends State<transactionsScreen> {
                   )),
               Expanded(
                 child: Container(
-                    padding: EdgeInsets.only(right: 64.0),
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Transactions",
-                      style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w800,
-                          color: Color(0xff09098A)),
-                    )),
+                  padding: EdgeInsets.only(right: 64.0),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Transactions",
+                    style: Theme.of(context).textTheme.headline1!.copyWith(
+                        color: DarkBlue,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                    // style: TextStyle(
+                    //   fontSize: 24,
+                    //   fontWeight: FontWeight.w800,
+                    //   color: Color(0xff09098A),
+                    // ),
+                  ),
+                ),
               ),
             ],
           ),
@@ -138,21 +172,22 @@ class _transactionsScreenState extends State<transactionsScreen> {
         Container(
             margin: EdgeInsets.only(left: 40.0),
             child: Text(
-              "past transaction",
+              "Past transaction",
               style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
                   color: Color(0xff09098A)),
             )),
         Padding(
-          padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
+          padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 8),
           child: Divider(),
         ),
         Container(height: 400, child: CaditDebitList()),
         Padding(
-          padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
+          padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 8),
           child: Divider(),
         ),
+<<<<<<< HEAD
         Center(
           child: Container(
             margin: EdgeInsets.only(top: 28.0, left: 16.0),
@@ -172,6 +207,8 @@ class _transactionsScreenState extends State<transactionsScreen> {
                 )),
           ),
         ),
+=======
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
       ],
     );
   }
@@ -186,7 +223,7 @@ class _transactionsScreenState extends State<transactionsScreen> {
     return Card(
       elevation: 5.0,
       shape: commonCardStyle(),
-      margin: EdgeInsets.all(32.0),
+      margin: EdgeInsets.all(30.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -249,6 +286,7 @@ class _transactionsScreenState extends State<transactionsScreen> {
                 transactionBottomSheet(context, transactionList[index]);
               });
             },
+<<<<<<< HEAD
             child: Column(
               children: [
                 Row(
@@ -328,6 +366,93 @@ class _transactionsScreenState extends State<transactionsScreen> {
                   child: Divider(),
                 ),
               ],
+=======
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                          height: 50,
+                          width: 50,
+                          margin: EdgeInsets.all(16.0),
+                          decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [
+                                    Color(0xff1D5AF0),
+                                    Color(0xffAEBEE3)
+                                  ]),
+                              borderRadius: BorderRadius.circular(25)),
+                          child: Icon(
+                            Icons.arrow_downward_outlined,
+                            color: Colors.white,
+                          )),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            transactionList[index].transaction_type.toString(),
+                            style: commonTextStyles(),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          TransactionDateFormated(
+                              transactionList[index].created_at.toString()),
+                        ],
+                      ),
+                      Spacer(),
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "₹",
+                                style: TextStyle(
+                                    fontSize: 22, fontWeight: FontWeight.w700),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                transactionList[index].amount.toString(),
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text(
+                            "Completed",
+                            style: commonTextStyles(),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Color(0xff09098A),
+                          size: 18,
+                        ),
+                      )
+                    ],
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
+                    child: Divider(),
+                  ),
+                ],
+              ),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
             ),
           );
         });
@@ -346,6 +471,7 @@ class _transactionsScreenState extends State<transactionsScreen> {
         builder: (context) {
           return StatefulBuilder(
             builder: (BuildContext context, StateSetter setState) {
+<<<<<<< HEAD
               return Container(
                 height: 600,
                 color: Color(0xffF1F2FB),
@@ -401,10 +527,50 @@ class _transactionsScreenState extends State<transactionsScreen> {
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontSize: 15,
+=======
+              return SingleChildScrollView(
+                child: Container(
+                  // height: 600,
+                  color: Color(0xffF1F2FB),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                              height: 45,
+                              width: 45,
+                              margin: EdgeInsets.only(
+                                  top: 10.0,
+                                  bottom: 5.0,
+                                  right: 16.0,
+                                  left: 16.0),
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.topCenter,
+                                      end: Alignment.bottomCenter,
+                                      colors: [
+                                        Color(0xff1D5AF0),
+                                        Color(0xffAEBEE3)
+                                      ]),
+                                  borderRadius: BorderRadius.circular(25)),
+                              child: Icon(
+                                Icons.arrow_downward_outlined,
+                                color: Colors.white,
+                              )),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 16.0),
+                            child: Text(
+                              trns.transaction_type.toString(),
+                              style: commonTextStyles(),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                             ),
                           ),
                         ],
                       ),
+<<<<<<< HEAD
                     ),
                     Column(
                       children: [
@@ -520,6 +686,156 @@ class _transactionsScreenState extends State<transactionsScreen> {
                       ],
                     ),
                   ],
+=======
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          left: 20.0,
+                          right: 20.0,
+                        ),
+                        child: Divider(),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 5.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text("$trns_txt", style: commonTextStyles()),
+                            Text(
+                              "$amt INR",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 16.0, vertical: 5.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Status",
+                                  style: commonTextStyles(),
+                                ),
+                                Text(
+                                  "Completed".toUpperCase(),
+                                  style: commonTextStyles(),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 18.0,
+                              right: 18.0,
+                            ),
+                            child: Divider(),
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 16.0, vertical: 5.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Payment Method",
+                                  style: commonTextStyles(),
+                                ),
+                                Text(
+                                  "UPI Payment Option 1",
+                                  style: commonTextStyles(),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 18.0,
+                              right: 18.0,
+                            ),
+                            child: Divider(),
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 16.0, vertical: 5.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Created At",
+                                  style: commonTextStyles(),
+                                ),
+                                TransactionDateFormated(
+                                    trns.created_at.toString()),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 18.0,
+                              right: 18.0,
+                            ),
+                            child: Divider(),
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 16.0, vertical: 5.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "updated At",
+                                  style: commonTextStyles(),
+                                ),
+                                TransactionDateFormated(
+                                    trns.updated_at.toString()),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 18.0,
+                              right: 18.0,
+                            ),
+                            child: Divider(),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(2.0),
+                            child: Container(
+                              margin: EdgeInsets.all(2.0),
+                              // height: 30,
+                              width: MediaQuery.of(context).size.width,
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 16.0, vertical: 8.0),
+                                child: Text(
+                                  "Transaction Successful",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                              decoration: BoxDecoration(
+                                color: Color(0xffAEBEE3),
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5.0,
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                 ),
               );
             },

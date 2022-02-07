@@ -105,6 +105,7 @@ class _ResponsesState extends State<Responses> {
     print(
         "Shop id is $shopId and query id is $queryId and price is ${productPrice.text.toString()}");
     String url = BaseUrl + "response/store";
+    debugPrint("URL--> $url");
 
     var request = http.MultipartRequest("POST", Uri.parse(url));
 
@@ -331,7 +332,7 @@ class _ResponsesState extends State<Responses> {
     var height = AppBar().preferredSize.height;
     return Column(
       children: [
-        SizedBox(height: height),
+        SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

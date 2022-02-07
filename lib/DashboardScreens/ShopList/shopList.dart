@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'dart:convert';
-import 'dart:developer';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -12,7 +10,6 @@ import 'package:shop_project/DashboardScreens/CreateShop/EditShop.dart';
 import 'package:shop_project/DashboardScreens/Inquries/Inquries.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:http/http.dart' as http;
 import 'package:shop_project/DashboardScreens/Shop/ShopModalClass.dart';
 import 'package:shop_project/DashboardScreens/ShopList/shopListModelClass.dart';
 
@@ -51,6 +48,7 @@ class _ShopListState extends State<ShopList> {
     print("my user id is $userId");
     String url =
         "https://viragtea.com/localsmart/public/api/shops?user_id=$userId&page=1";
+    debugPrint("URL-->$url");
     var response = await Dio()
         .get(
       url,
@@ -102,7 +100,7 @@ class _ShopListState extends State<ShopList> {
             child: Column(
               children: [
                 SizedBox(
-                  height: height,
+                  height: 30,
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
@@ -111,34 +109,57 @@ class _ShopListState extends State<ShopList> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Expanded(
-                        flex: 1,
-                        child: InkWell(
-                            onTap: () {
-                              _key1.currentState!.openDrawer();
-                            },
-                            child: Icon(
-                              Icons.menu_rounded,
-                              color: DarkBlue,
-                            )),
+                      IconButton(
+                        onPressed: () {
+                          _key1.currentState!.openDrawer();
+                        },
+                        icon: Icon(
+                          Icons.menu_rounded,
+                          size: 25,
+                          color: DarkBlue,
+                        ),
                       ),
+                      // Expanded(
+                      //   flex: 1,
+                      //   child: Padding(
+                      //     padding: const EdgeInsets.only(left: 16.0),
+                      //     child: InkWell(
+                      //         onTap: () {
+                      //           _key1.currentState!.openDrawer();
+                      //         },
+                      //         child: Icon(
+                      //           Icons.menu_rounded,
+                      //           size: 30,
+                      //           color: DarkBlue,
+                      //         )),
+                      //   ),
+                      // ),
                       Expanded(
                         flex: 10,
                         child: Container(
                           //        color: Colors.green,
                           child: Center(
-                            child: Text(
-                              'Shop List',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headline1!
-                                  .copyWith(
-                                      color: DarkBlue,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold),
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                top: 8,
+                                right: 30,
+                              ),
+                              child: Text(
+                                'Shop List',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline1!
+                                    .copyWith(
+                                        color: DarkBlue,
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ),
+                      ),
+                      SizedBox(
+                        width: 40,
                       ),
                     ],
                   ),
@@ -155,6 +176,7 @@ class _ShopListState extends State<ShopList> {
                             itemCount: shopListData.length,
                             itemBuilder: (cnt, index) {
                               return Container(
+<<<<<<< HEAD
                                 margin: EdgeInsets.all(20),
                                 padding: EdgeInsets.all(10),
                                 // ignore: prefer _const_constructors
@@ -201,12 +223,103 @@ class _ShopListState extends State<ShopList> {
                                               Text(
                                                 shopListData[index]
                                                     .shop_name
+=======
+                                margin: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 10,
+                                ),
+                                // padding: EdgeInsets.all(5),
+                                // ignore: prefer _const_constructors
+                                decoration: BoxDecoration(
+                                  // ignore: prefer_const_literals_to_create_immutables
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Color.fromRGBO(0, 0, 0, 0.2))
+                                  ],
+                                  // ignore: prefer _const_constructors
+                                  color: Color.fromRGBO(237, 237, 237,
+                                      1), //background: rgba(237, 237, 237, 1);
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(10.0),
+                                  ),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                          vertical: 20, horizontal: 10),
+                                      margin:
+                                          EdgeInsets.symmetric(horizontal: 10),
+                                      //width: 50,
+                                      //    height: 70,
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          // EditShop
+                                          Navigator.push(context,
+                                              MaterialPageRoute(builder: (cnt) {
+                                            return EditShop(
+                                              shop_id: shopListData[index].id,
+                                            );
+                                          }));
+                                        },
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              shopListData[index]
+                                                  .shop_name
+                                                  .toString(),
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .headline1!
+                                                  .copyWith(
+                                                      color: DarkBlue,
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.bold),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                            SizedBox(height: 5),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                  // boxShadow: [
+                                                  //   BoxShadow(color: Color.fromRGBO(0, 0, 0, 0.2))
+                                                  // ],
+                                                  // shape: BoxShape.circle,
+                                                  gradient: LinearGradient(
+                                                    colors: [
+                                                      Color.fromRGBO(
+                                                          181, 197, 255, 1),
+                                                      Color.fromRGBO(
+                                                          111, 138, 235, 0),
+                                                    ],
+                                                  ),
+                                                  // color: Color.fromRGBO(
+                                                  //     225,
+                                                  //     225,
+                                                  //     238,
+                                                  //     1), //background: rgba(237, 237, 237, 1);
+
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                          Radius.circular(
+                                                              10.0))),
+                                              padding: EdgeInsets.symmetric(
+                                                  horizontal: 10, vertical: 5),
+                                              child: Text(
+                                                shopListData[index]
+                                                    .category
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                                                     .toString(),
                                                 style: Theme.of(context)
                                                     .textTheme
                                                     .headline1!
                                                     .copyWith(
                                                         color: DarkBlue,
+<<<<<<< HEAD
                                                         fontSize: 20,
                                                         fontWeight:
                                                             FontWeight.bold),
@@ -256,9 +369,18 @@ class _ShopListState extends State<ShopList> {
                                               )
                                             ],
                                           ),
+=======
+                                                        fontSize: 16,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                              ),
+                                            )
+                                          ],
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                                         ),
                                         // color: Colors.blue,
                                       ),
+<<<<<<< HEAD
                                     ),
                                     Expanded(
                                       child: GestureDetector(
@@ -275,6 +397,24 @@ class _ShopListState extends State<ShopList> {
                                             return Inquries();
                                           }));
                                         },
+=======
+                                      // color: Colors.blue,
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        print(
+                                            "list shop ${shopListData[index].id.toString()}");
+                                        Shared.pref.setString("shopId",
+                                            shopListData[index].id.toString());
+                                        Navigator.push(context,
+                                            MaterialPageRoute(builder: (cnt) {
+                                          return Inquries();
+                                        }));
+                                      },
+                                      child: Padding(
+                                        padding:
+                                            const EdgeInsets.only(right: 10.0),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                                         child: Container(
                                           child: CircleAvatar(
                                             backgroundColor: Colors.transparent,
@@ -305,7 +445,7 @@ class _ShopListState extends State<ShopList> {
                                                         .headline1!
                                                         .copyWith(
                                                             color: DarkBlue,
-                                                            fontSize: 22,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight
                                                                     .bold),
@@ -336,6 +476,7 @@ class _ShopListState extends State<ShopList> {
                             }),
                       )
                     : Container(
+<<<<<<< HEAD
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -346,6 +487,16 @@ class _ShopListState extends State<ShopList> {
                               width: 40,
                             )
                           ],
+=======
+                        child: Expanded(
+                          child: Container(
+                            child: Center(
+                              child: CircularProgressIndicator(
+                                color: DarkBlue,
+                              ),
+                            ),
+                          ),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                         ),
                       ),
                 checkData

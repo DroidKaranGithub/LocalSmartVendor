@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
@@ -22,6 +23,12 @@
                 },
                 {
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/e828b54036d6cc1546800e2a7cc1196c/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+=======
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/e828b54036d6cc1546800e2a7cc1196c/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -38,6 +45,26 @@
                         "endColumns": "12,12,12",
                         "endOffsets": "869,1040,1213"
                     }
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/041b803f4cbcb50d1c69619ca6247870/jetified-play-services-auth-17.0.0/res/values-watch-v20/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "171,246,322,397,472,559,636,723",
+                        "endColumns": "74,75,74,74,86,76,86,75",
+                        "endOffsets": "245,321,396,471,558,635,722,798"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,134,214,293,372,463,544,635",
+                        "endColumns": "78,79,78,78,90,80,90,79",
+                        "endOffsets": "129,209,288,367,458,539,630,710"
+                    }
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                 }
             ]
         }

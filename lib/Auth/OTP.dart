@@ -76,15 +76,27 @@ class _OTPState extends State<OTP> {
       var msg = jsonDecode(value.body);
 
       if (msg['code'] == 200) {
-        Fluttertoast.showToast(
-            msg: "${msg['msg']}", toastLength: Toast.LENGTH_LONG);
+        // Fluttertoast.showToast(
+        //     msg: "${msg['msg']}", toastLength: Toast.LENGTH_LONG);
         setState(() {
           widget.OtpCode = msg['otp'].toString();
         });
         showAlertDialog(context, msg['msg'].toString(), "Success");
       } else {
-        Fluttertoast.showToast(msg: "${msg['msg']}");
-        showAlertDialog(context, msg['msg'].toString(), "Error");
+        // Fluttertoast.showToast(msg: "${msg['msg']}");
+        // showAlertDialog(context, msg['msg'].toString(), "Error");
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.red,
+            content: Text(
+              msg['error'],
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+        );
       }
     });
   }
@@ -99,10 +111,34 @@ class _OTPState extends State<OTP> {
         Fluttertoast.showToast(
           msg: msg['error'],
         );
-        showAlertDialog(context, msg['error'].toString(), "Error");
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.red,
+            content: Text(
+              msg['error'],
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+        );
+        // showAlertDialog(context, msg['error'].toString(), "Error");
       } else {
-        Fluttertoast.showToast(
-          msg: msg['msg'],
+        // Fluttertoast.showToast(
+        //   msg: msg['msg'],
+        // );
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.red,
+            content: Text(
+              msg['msg'],
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
+            ),
+          ),
         );
         ApiRepository()
             .Register(
@@ -130,9 +166,21 @@ class _OTPState extends State<OTP> {
                 MaterialPageRoute(builder: (context) {
               return CreateShop();
             }));
-          } else {
-            Fluttertoast.showToast(msg: msg['message']);
-            showAlertDialog(context, msg['message'].toString(), "Error");
+            // } else {
+            //   Fluttertoast.showToast(msg: msg['message']);
+            //   showAlertDialog(context, msg['message'].toString(), "Error");
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                backgroundColor: Colors.red,
+                content: Text(
+                  msg['message'],
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16.0,
+                  ),
+                ),
+              ),
+            );
           }
         });
       }

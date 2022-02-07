@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'dart:io';
 import 'dart:async';
 import 'dart:convert';
@@ -9,9 +8,9 @@ import 'package:shop_project/Constants/Constant.dart';
 import 'package:shop_project/Constants/InputField.dart';
 import 'package:shop_project/Constants/LoaderClass.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:shop_project/DashboardScreens/Profile/Profile.dart';
+import 'package:shop_project/constant.dart';
 
 class EditProfile extends StatefulWidget {
   static String id = "EditProfile";
@@ -83,10 +82,18 @@ class _EditProfileState extends State<EditProfile> {
               Shared.pref.setString(
                   "PROFILE_IMAGE", data['data']['profile_image'].toString());
 
+<<<<<<< HEAD
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (BuildContext context) {
                 return Profile();
               }));
+=======
+              // Navigator.pushReplacement(context,
+              //     MaterialPageRoute(builder: (BuildContext context) {
+              //   return Profile();
+              // }));
+              Navigator.pop(context);
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
             } catch (error) {
               print("error data $error");
             }
@@ -129,12 +136,21 @@ class _EditProfileState extends State<EditProfile> {
     loader = Loader.overlayLoader(context);
     var profile_img_var;
 
+<<<<<<< HEAD
     if (Shared.pref.getString("PROFILE_IMAGE").toString() == "") {
       profile_img_var =
           "https://th.bing.com/th/id/OIP.kcaJsnMsMsFRdU6d1m2v6AHaHa?pid=ImgDet&rs=1";
     } else {
       profile_img_var = Shared.pref.getString("PROFILE_IMAGE").toString();
     }
+=======
+    // if (Shared.pref.getString("PROFILE_IMAGE").toString() == "") {
+    //   profile_img_var =
+    //       "https://th.bing.com/th/id/OIP.kcaJsnMsMsFRdU6d1m2v6AHaHa?pid=ImgDet&rs=1";
+    // } else {
+    //   profile_img_var = Shared.pref.getString("PROFILE_IMAGE").toString();
+    // }
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
     var height = AppBar().preferredSize.height;
     return Scaffold(
         body: Form(
@@ -144,7 +160,7 @@ class _EditProfileState extends State<EditProfile> {
         child: Column(
           children: [
             SizedBox(
-              height: height,
+              height: 30,
             ),
             Container(
               height: MediaQuery.of(context).size.height * 0.25,
@@ -167,6 +183,7 @@ class _EditProfileState extends State<EditProfile> {
                         Column(
                           children: [
                             CircleAvatar(
+<<<<<<< HEAD
                               radius: 35,
                               backgroundColor: DarkBlue,
                               child: ClipRRect(
@@ -184,7 +201,34 @@ class _EditProfileState extends State<EditProfile> {
                                           //     .toString(),
                                           // fit: BoxFit.cover,
                                           )),
+=======
+                              maxRadius: 35,
+                              foregroundImage:
+                                  Shared.pref.getString("PROFILE_IMAGE") != ""
+                                      ? NetworkImage(Shared.pref
+                                          .getString("PROFILE_IMAGE")
+                                          .toString())
+                                      : NetworkImage(PROFILE_PLACE_HOLDER),
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                             ),
+
+                            // CircleAvatar(
+                            //   radius: 35,
+                            //   backgroundColor: DarkBlue,
+                            //   child:
+                            //   ClipRRect(
+                            //       borderRadius: BorderRadius.circular(40),
+                            //       child: personalProfilepath
+                            //           .toString()!=""
+                            //           ? Image.file(File(personalProfilepath),scale: 1.5,fit: BoxFit.cover,)
+                            //           : Image.network(profile_img_var.toString()
+
+                            //         // Shared.pref
+                            //         //     .getString("PROFILE_IMAGE")
+                            //         //     .toString(),
+                            //         // fit: BoxFit.cover,
+                            //       )),
+                            // ),
                             SizedBox(
                               height: 10,
                             ),
@@ -209,7 +253,7 @@ class _EditProfileState extends State<EditProfile> {
                           Icons.edit,
                           color: Colors.white,
                           size: 30,
-                        )
+                        ),
                       ],
                     ),
                   ],
@@ -316,7 +360,9 @@ class _EditProfileState extends State<EditProfile> {
                             // },
                             keyboardType: TextInputType.emailAddress,
                             IsBorder: true,
-                            hint: Shared.pref.getString('UserEmail').toString(),
+                            hint: Shared.pref.getString('UserEmail') != "null"
+                                ? Shared.pref.getString('UserEmail').toString()
+                                : "Enter email",
                             IsStyle: true,
                             style: Theme.of(context)
                                 .textTheme
@@ -349,8 +395,9 @@ class _EditProfileState extends State<EditProfile> {
                             height: 60,
                             decoration: BoxDecoration(
                                 color: color,
-                                borderRadius: BorderRadius.circular(20)),
+                                borderRadius: BorderRadius.circular(30)),
                             width: MediaQuery.of(context).size.width * 0.6,
+<<<<<<< HEAD
                             child: Padding(
                               padding: const EdgeInsets.all(15),
                               child: Text(
@@ -364,6 +411,28 @@ class _EditProfileState extends State<EditProfile> {
                                         fontWeight: FontWeight.bold,
                                         color: DarkBlue,
                                         fontSize: 16),
+=======
+                            child: Center(
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 16.0),
+                                    child: Text(
+                                      Shared.pref
+                                          .getString('mobileNumber')
+                                          .toString(),
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .headline1!
+                                          .copyWith(
+                                              fontWeight: FontWeight.bold,
+                                              color: DarkBlue,
+                                              fontSize: 16),
+                                    ),
+                                  ),
+                                ],
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                               ),
                             ),
                           ),

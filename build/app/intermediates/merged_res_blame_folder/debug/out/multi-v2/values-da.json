@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml",
             "map": [
                 {
@@ -22,6 +23,29 @@
                 },
                 {
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/values-da/values.xml",
+=======
+            "outputFile": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml",
+            "map": [
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/e828b54036d6cc1546800e2a7cc1196c/appcompat-1.2.0/res/values-da/values-da.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,205,299,415,500,600,713,791,867,958,1051,1144,1238,1332,1425,1520,1618,1709,1800,1879,1987,2094,2190,2303,2406,2507,2660,2757",
+                        "endColumns": "99,93,115,84,99,112,77,75,90,92,92,93,93,92,94,97,90,90,78,107,106,95,112,102,100,152,96,79",
+                        "endOffsets": "200,294,410,495,595,708,786,862,953,1046,1139,1233,1327,1420,1515,1613,1704,1795,1874,1982,2089,2185,2298,2401,2502,2655,2752,2832"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,104",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "484,584,678,794,879,979,1092,1170,1246,1337,1430,1523,1617,1711,1804,1899,1997,2088,2179,2258,2366,2473,2569,2682,2785,2886,3039,9298",
+                        "endColumns": "99,93,115,84,99,112,77,75,90,92,92,93,93,92,94,97,90,90,78,107,106,95,112,102,100,152,96,79",
+                        "endOffsets": "579,673,789,874,974,1087,1165,1241,1332,1425,1518,1612,1706,1799,1894,1992,2083,2174,2253,2361,2468,2564,2677,2780,2881,3034,3131,9373"
+                    }
+                },
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1ad0574f41c5a6b8f1902c963571a66d/jetified-play-services-base-17.5.0/res/values-da/values.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,6 +62,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-da/values-da.xml",
                     "from": {
                         "startLines": "2",
@@ -73,6 +98,26 @@
                 },
                 {
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c26502361ec4dc2b3cb8ca567b1e8c51/jetified-play-services-basement-17.6.0/res/values-da/values.xml",
+=======
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1547c72eb1af1a5fb9c86d26c670f759/jetified-play-services-wallet-18.1.3/res/values-da/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "202",
+                        "endColumns": "69",
+                        "endOffsets": "271"
+                    },
+                    "to": {
+                        "startLines": "106",
+                        "startColumns": "4",
+                        "startOffsets": "9479",
+                        "endColumns": "73",
+                        "endOffsets": "9548"
+                    }
+                },
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c26502361ec4dc2b3cb8ca567b1e8c51/jetified-play-services-basement-17.6.0/res/values-da/values.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -89,7 +134,28 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/0446fe63358643eed231e64d317a870d/jetified-exoplayer-ui-2.14.1/res/values-da/values-da.xml",
+=======
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/values-da/values-da.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "105",
+                        "startColumns": "4",
+                        "startOffsets": "9378",
+                        "endColumns": "100",
+                        "endOffsets": "9474"
+                    }
+                },
+                {
+                    "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/3a7d79151a09890e25f3c82cf4563154/jetified-exoplayer-ui-2.14.1/res/values-da/values-da.xml",
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                     "from": {
                         "startLines": "2,6,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

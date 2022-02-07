@@ -290,7 +290,11 @@ class _EditShopState extends State<EditShop> {
                       child: Column(
                         children: [
                           SizedBox(
+<<<<<<< HEAD
                             height: height,
+=======
+                            height: 30,
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
                           ),
                           Container(
                             width: MediaQuery.of(context).size.width,

@@ -1,6 +1,11 @@
 [
     {
+<<<<<<< HEAD
         "merged": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/image_picker/intermediates/res/merged/debug/xml/flutter_image_picker_file_paths.xml",
         "source": "/Users/magespider/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4+6/android/src/main/res/xml/flutter_image_picker_file_paths.xml"
+=======
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/image_picker/intermediates/res/merged/debug/xml/flutter_image_picker_file_paths.xml",
+        "source": "/Users/ms-02/Documents/Kiran/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4+6/android/src/main/res/xml/flutter_image_picker_file_paths.xml"
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
     }
 ]

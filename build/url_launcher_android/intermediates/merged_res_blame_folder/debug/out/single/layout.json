@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/url_launcher_android/intermediates/res/merged/debug/layout/custom_dialog.xml",
         "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/custom_dialog.xml"
     },
@@ -22,5 +23,29 @@
     {
         "merged": "/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
         "source": "/Users/magespider/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+=======
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/url_launcher_android/intermediates/res/merged/debug/layout/custom_dialog.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_part_time.xml"
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
     }
 ]

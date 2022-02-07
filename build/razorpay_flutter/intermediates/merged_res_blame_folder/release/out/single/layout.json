@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/toast_custom.xml",
+        "source": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/fluttertoast/intermediates/packaged_res/release/layout/toast_custom.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/rzp_loader.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/layout/rzp_loader.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/wallet_test_layout.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/1547c72eb1af1a5fb9c86d26c670f759/jetified-play-services-wallet-18.1.3/res/layout/wallet_test_layout.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/c1ebda589683e9beaa06b540aac78854/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/razorpay_flutter/intermediates/res/merged/release/layout/rzp_magic_base.xml",
+        "source": "/Users/ms-02/.gradle/caches/transforms-2/files-2.1/daa8204d1080502757851136cbb8b7f1/jetified-checkout-1.6.15/res/layout/rzp_magic_base.xml"
+    }
+]

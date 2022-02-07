@@ -38,11 +38,31 @@ class _RegisterState extends State<Register> {
 
         // print("body data ${body.Msg} ${body.Otp}");
         if (msg['status'] == false) {
+<<<<<<< HEAD
           Fluttertoast.showToast(
               msg: "${msg['error'].toString()}",
               toastLength: Toast.LENGTH_LONG);
 
           showAlertDialog(context, msg['error'].toString(), "Error");
+=======
+          // Fluttertoast.showToast(
+          //     msg: "${msg['error'].toString()}",
+          //     toastLength: Toast.LENGTH_LONG);
+
+          // showAlertDialog(context, msg['error'].toString(), "Error");
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              backgroundColor: Colors.red,
+              content: Text(
+                msg['error'],
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16.0,
+                ),
+              ),
+            ),
+          );
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
         } else {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
             return OTP(
@@ -55,7 +75,23 @@ class _RegisterState extends State<Register> {
         }
       });
     } catch (e) {
+<<<<<<< HEAD
       showAlertDialog(context, e.toString(), "Exception");
+=======
+      //  showAlertDialog(context, e.toString(), "Exception");
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: Colors.red,
+          content: Text(
+            e.toString(),
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16.0,
+            ),
+          ),
+        ),
+      );
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
     }
   }
 

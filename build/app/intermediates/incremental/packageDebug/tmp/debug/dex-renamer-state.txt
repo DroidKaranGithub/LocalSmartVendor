@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Fri Feb 04 18:59:35 IST 2022
+=======
+#Sun Feb 06 12:12:52 IST 2022
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
 path.4=classes_1.dex
 path.3=classes_0.dex
 path.2=classes2.dex
@@ -14,6 +18,7 @@ renamed.12=classes13.dex
 path.5=classes_10.dex
 renamed.11=classes12.dex
 renamed.10=classes11.dex
+<<<<<<< HEAD
 base.14=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_9.dex
 path.0=classes.dex
 base.4=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_1.dex
@@ -21,6 +26,15 @@ base.3=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/interme
 base.2=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 base.1=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
 base.0=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+=======
+base.14=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_9.dex
+path.0=classes.dex
+base.4=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_1.dex
+base.3=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex
+base.2=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.1=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.0=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d
 renamed.3=classes4.dex
 path.12=classes_7.dex
 renamed.2=classes3.dex
@@ -28,6 +42,7 @@ path.13=classes_8.dex
 renamed.1=classes2.dex
 path.10=classes_5.dex
 renamed.0=classes.dex
+<<<<<<< HEAD
 base.9=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_4.dex
 path.9=classes_4.dex
 path.11=classes_6.dex
@@ -44,3 +59,21 @@ base.13=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/interm
 base.12=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_7.dex
 base.11=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_6.dex
 base.10=/Users/magespider/Documents/Flutter/Repo/vendor-sourabh/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_5.dex
+=======
+base.9=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_4.dex
+path.9=classes_4.dex
+path.11=classes_6.dex
+renamed.7=classes8.dex
+base.8=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_3.dex
+renamed.6=classes7.dex
+base.7=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_2.dex
+renamed.5=classes6.dex
+base.6=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_11.dex
+path.14=classes_9.dex
+renamed.4=classes5.dex
+base.5=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_10.dex
+base.13=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_8.dex
+base.12=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_7.dex
+base.11=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_6.dex
+base.10=/Users/ms-02/Documents/Kiran/Repo/LocalSmartVendor/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_5.dex
+>>>>>>> d06bd2fee0f4c9bb3f5c8ab81bac27d6a822498d

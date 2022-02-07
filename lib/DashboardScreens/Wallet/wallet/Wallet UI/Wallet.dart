@@ -1,3 +1,4 @@
+import 'package:shop_project/Constants/Constant.dart';
 import 'package:shop_project/Constants/LoaderClass.dart';
 import 'package:shop_project/DashboardScreens/Wallet/coupons/Coupon%20UI/Coupons.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +97,7 @@ class _walletUIState extends State<walletUI> {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.only(top: 32.0, left: 16.0),
+          margin: EdgeInsets.only(top: 30.0, left: 16.0),
           child: Row(
             children: [
               IconButton(
@@ -109,16 +110,18 @@ class _walletUIState extends State<walletUI> {
                     color: Color(0xff09098A),
                   )),
               Expanded(
-                  child: Container(
-                      padding: EdgeInsets.only(right: 64.0),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Wallet",
-                        style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w800,
-                            color: Color(0xff09098A)),
-                      )))
+                child: Container(
+                  padding: EdgeInsets.only(right: 64.0),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Wallet",
+                    style: Theme.of(context).textTheme.headline1!.copyWith(
+                        color: DarkBlue,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

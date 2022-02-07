@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:shop_project/Constants/Constant.dart';
 
 class Loader {
   static OverlayEntry overlayLoader(context) {
@@ -11,7 +12,8 @@ class Loader {
               child: Container(
                   child: Center(
                       child: CircularProgressIndicator(
-            backgroundColor: Colors.greenAccent,
+            color: DarkBlue,
+            // backgroundColor: Colors.greenAccent,
           )))),
         ),
       );
